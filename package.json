@@ -1,0 +1,14 @@
+{
+  "name": "stock-predict",
+  "version": "1.0.0",
+  "description": "Aplikasi Prediksi Saham Perbankan Indonesia",
+  "scripts": {
+    "start": "npx serve frontend -p 3000",
+    "dev": "npx serve frontend -p 3000",
+    "backend": "powershell -Command \"cd backend; .\\venv\\Scripts\\activate; uvicorn app.main:app --reload --port 8000\""
+  },
+  "dependencies": {
+    "serve": "^14.2.4"
+  }
+}
+

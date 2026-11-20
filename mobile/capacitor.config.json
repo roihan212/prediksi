@@ -1,0 +1,15 @@
+{
+  "appId": "id.ac.university.stockpredict",
+  "appName": "StockPredict",
+  "webDir": "../frontend",
+  "server": {
+    "androidScheme": "http",
+    "cleartext": true
+  },
+  "android": {
+    "allowMixedContent": true,
+    "captureInput": true,
+    "webContentsDebuggingEnabled": false
+  }
+}
+

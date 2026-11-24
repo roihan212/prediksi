@@ -229,3 +229,4 @@ async def get_stock_news(ticker: str, limit: int = Query(6, le=15)):
         },
         "articles": news,
     }
+

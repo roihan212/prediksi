@@ -100,20 +100,20 @@ function renderAdminDashboard(container) {
 
       <!-- Server & Connection Settings -->
       <div class="card">
-        <div class="card-header"><span class="card-title">🌐 Pengaturan Koneksi Server</span></div>
+        <div class="card-header"><span class="card-title">🌐 Pengaturan Koneksi Server Backend</span></div>
         <p style="font-size:0.8rem;color:var(--color-text-3);margin-bottom:var(--space-3)">
-          Ganti IP backend jika menggunakan HP (APK) di jaringan WiFi yang berbeda.
+          Masukkan URL Cloud Backend (misal: https://stockpredict-api.onrender.com) atau IP laptop.
         </p>
         <div class="form-group" style="margin-bottom:var(--space-3)">
-          <label class="form-label" style="font-size:0.75rem">IP Server Laptop / Host</label>
+          <label class="form-label" style="font-size:0.75rem">URL Backend / IP Server</label>
           <div style="display:flex;gap:var(--space-2)">
-            <input type="text" class="form-control" id="server-ip-input" placeholder="192.168.1.16" 
-                   value="${localStorage.getItem('sp_server_ip') || '192.168.1.16'}" />
+            <input type="text" class="form-control" id="server-ip-input" placeholder="https://stockpredict-api.onrender.com" 
+                   value="${localStorage.getItem('sp_backend_url') || localStorage.getItem('sp_server_ip') || ''}" />
             <button class="btn btn-primary btn-sm" onclick="saveServerIPSetting()">Simpan</button>
           </div>
         </div>
         <div class="metric-row">
-          <span class="metric-label">Backend Aktif</span>
+          <span class="metric-label">API Aktif</span>
           <span class="metric-value mono" style="font-size:0.75rem">${API_BASE}</span>
         </div>
       </div>

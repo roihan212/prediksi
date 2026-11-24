@@ -13,19 +13,40 @@ const IS_CAPACITOR = window.location.protocol === 'capacitor:' ||
                      (typeof window.Capacitor !== 'undefined');
 
 function getApiBase() {
+  // 1. Cek apakah ada custom backend URL tersimpan (misal dari Render Cloud)
+  const savedUrl = localStorage.getItem('sp_backend_url');
+  if (savedUrl) {
+    return `${savedUrl.replace(/\/$/, '')}/api/v1`;
+  }
+
+  // 2. Di HP (Capacitor APK)
   if (IS_CAPACITOR) {
-    // Di HP: pakai IP yang tersimpan di localStorage, default ke IP lokal
     const savedIp = localStorage.getItem('sp_server_ip') || '192.168.1.16';
     return `http://${savedIp}:8000/api/v1`;
   }
+
+  // 3. Di GitHub Pages (otomatis pakai cloud jika belum diset manual)
+  if (window.location.hostname.includes('github.io')) {
+    // URL Render default (akan diisi URL render Anda)
+    return 'https://stockpredict-api.onrender.com/api/v1';
+  }
+
+  // 4. Default lokal
   return 'http://localhost:8000/api/v1';
 }
 
 const API_BASE = getApiBase();
 
-// Fungsi untuk mengubah IP server (dari halaman Admin/Settings di HP)
-function setServerIP(ip) {
-  localStorage.setItem('sp_server_ip', ip);
+// Fungsi untuk mengubah URL/IP server (dari halaman Admin)
+function setServerIP(urlOrIp) {
+  if (!urlOrIp) return;
+  if (urlOrIp.startsWith('http://') || urlOrIp.startsWith('https://')) {
+    localStorage.setItem('sp_backend_url', urlOrIp);
+  } else {
+    // Jika hanya IP angka
+    localStorage.setItem('sp_server_ip', urlOrIp);
+    localStorage.setItem('sp_backend_url', `http://${urlOrIp}:8000`);
+  }
   // Reload agar API_BASE ter-update
   window.location.reload();
 }

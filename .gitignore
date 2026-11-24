@@ -13,8 +13,8 @@ env/
 # Environment variables
 .env
 
-# Model weights & caches
-backend/saved_models/*.joblib
-backend/saved_models/*.pkl
+# Model weights & caches (diberi izin untuk deploy cloud)
+# backend/saved_models/*.joblib
+# backend/saved_models/*.pkl
 .pytest_cache/
 

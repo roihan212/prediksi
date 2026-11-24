@@ -25,10 +25,9 @@ function getApiBase() {
     return `http://${savedIp}:8000/api/v1`;
   }
 
-  // 3. Di GitHub Pages (otomatis pakai cloud jika belum diset manual)
+  // 3. Di GitHub Pages (otomatis pakai tunnel HTTPS publik)
   if (window.location.hostname.includes('github.io')) {
-    // URL Render default (akan diisi URL render Anda)
-    return 'https://stockpredict-api.onrender.com/api/v1';
+    return 'https://tall-cats-flash.loca.lt/api/v1';
   }
 
   // 4. Default lokal
@@ -61,7 +60,10 @@ function setAuthToken(token) {
 }
 
 function getAuthHeaders() {
-  const h = { 'Content-Type': 'application/json' };
+  const h = { 
+    'Content-Type': 'application/json',
+    'Bypass-Tunnel-Reminder': 'true'
+  };
   if (_authToken) h['Authorization'] = `Bearer ${_authToken}`;
   return h;
 }

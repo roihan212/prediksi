@@ -5,6 +5,8 @@
 
 let _predTicker = 'BBCA';
 let _realtimeInterval = null;  // timer auto-refresh
+let _lastKnownPrice = 5800;    // harga acuan default
+let _currentHistoryCache = []; // cache untuk unduh CSV
 
 function setActiveTicker(ticker) {
   _predTicker = ticker;
@@ -57,7 +59,7 @@ async function renderPrediction(container) {
     </div>
 
     <!-- Algorithm Comparison Cards -->
-    <div class="grid-3" id="pred-algo-cards" style="margin-bottom:var(--space-5)">
+    <div class="grid-3" id="pred-algo-cards" style="margin-bottom:var(--space-4)">
       ${['RANDOM_FOREST', 'DECISION_TREE', 'LOGISTIC_REGRESSION'].map(algo => `
         <div class="glow-card" id="pred-card-${algo}">
           <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:var(--space-3)">
@@ -68,6 +70,40 @@ async function renderPrediction(container) {
           <div class="skeleton" style="height:12px;width:80%"></div>
         </div>
       `).join('')}
+    </div>
+
+    <!-- 🎯 Trading Plan & Actionable Recommendation Card -->
+    <div class="card" id="trading-plan-card" style="margin-bottom:var(--space-5);border-left:4px solid var(--color-primary)">
+      <div class="card-header" style="flex-wrap:wrap;gap:var(--space-2)">
+        <span class="card-title">🎯 Rekomendasi Trading Plan & Manajemen Risiko</span>
+        <span id="plan-badge" class="badge badge-bull">Analisis Model</span>
+      </div>
+      <div id="plan-content" style="padding:var(--space-2) var(--space-4) var(--space-4)">
+        <div class="skeleton" style="height:70px;width:100%;border-radius:8px"></div>
+      </div>
+    </div>
+
+    <!-- 💰 Simulasi Modal & Kalkulator Lot -->
+    <div class="card" style="margin-bottom:var(--space-5)">
+      <div class="card-header">
+        <span class="card-title">💵 Kalkulator Simulasi Modal Investasi</span>
+        <span style="font-size:0.75rem;color:var(--color-text-3)">1 Lot = 100 Lembar</span>
+      </div>
+      <div style="padding:var(--space-4);display:grid;grid-template-columns:repeat(auto-fit, minmax(260px, 1fr));gap:var(--space-4)">
+        <div>
+          <label class="form-label" style="font-size:0.8rem">Modal Investasi Anda (Rp)</label>
+          <div style="display:flex;gap:var(--space-2)">
+            <input type="number" id="sim-capital" class="form-control" value="10000000" step="500000" oninput="calculateCapitalSimulation()" />
+            <button class="btn btn-secondary btn-sm" onclick="calculateCapitalSimulation()">Hitung</button>
+          </div>
+        </div>
+        <div id="sim-result" style="display:flex;flex-direction:column;gap:6px;font-size:0.85rem;justify-content:center;background:var(--color-surface-2);padding:var(--space-3);border-radius:8px;border:1px solid var(--color-border)">
+          <span>Jumlah Pembelian: <strong id="sim-lots">—</strong></span>
+          <span>Total Nilai Pembelian: <strong id="sim-total-cost">—</strong></span>
+          <span>Potensi Laba (Target TP): <strong id="sim-tp-profit" style="color:var(--color-bull)">—</strong></span>
+          <span>Batas Risiko (Stop Loss): <strong id="sim-sl-loss" style="color:var(--color-bear)">—</strong></span>
+        </div>
+      </div>
     </div>
 
     <!-- Riwayat Prediksi + Filter Tanggal -->
@@ -87,6 +123,9 @@ async function renderPrediction(container) {
           <input type="date" id="hist-end" class="form-control" style="width:auto;padding:4px 8px;font-size:0.8rem"
                  value="${fmt(today)}" onchange="loadPredictionHistory()">
           <button class="btn btn-secondary btn-sm" onclick="clearHistFilter()">Reset</button>
+          <button class="btn btn-outline btn-sm" onclick="exportHistoryToCSV()" title="Unduh Riwayat ke File CSV Excel">
+            📥 Unduh CSV
+          </button>
         </div>
       </div>
 
@@ -133,6 +172,7 @@ async function loadPredictionData() {
   try {
     const predictions = await PredictionsAPI.getLatest(_predTicker);
     renderAlgoCards(predictions, false);
+    renderTradingPlan(predictions);
   } catch (e) {
     // Jika DB kosong, coba real-time
     showToast('Info', 'Memuat prediksi real-time...', 'info');
@@ -154,7 +194,9 @@ async function loadRealtimePrediction() {
 
   try {
     const data = await RealtimeAPI.predict(_predTicker);
+    if (data.harga_terakhir) _lastKnownPrice = data.harga_terakhir;
     renderAlgoCards(data.predictions, true);
+    renderTradingPlan(data.predictions, data.harga_terakhir);
     updateInfoBar(data);
 
     if (dot)   { dot.style.background = '#22c55e'; dot.style.animation = ''; }
@@ -252,6 +294,7 @@ async function loadPredictionHistory() {
 
   try {
     const history = await RealtimeAPI.historyByDate(_predTicker, { algorithm: algo, start, end, limit: 200 });
+    _currentHistoryCache = history; // simpan untuk CSV export
 
     // Chart akurasi
     createPredictionHistoryChart('pred-history-chart', history);
@@ -344,4 +387,151 @@ function renderPredictionTable(history) {
       </tr>
     `;
   }).join('');
+}
+
+// ── 🎯 Trading Plan & Risk Management ─────────────────────────
+function renderTradingPlan(predictions, priceOverride = null) {
+  const container = document.getElementById('plan-content');
+  const badge     = document.getElementById('plan-badge');
+  if (!container) return;
+
+  const rfPred = predictions.find(p => p.algorithm === 'RANDOM_FOREST') || predictions[0];
+  if (!rfPred) {
+    container.innerHTML = `<p style="color:var(--color-text-3);font-size:0.85rem">Data prediksi belum lengkap untuk menyusun trading plan.</p>`;
+    return;
+  }
+
+  // Tentukan harga acuan
+  const defaultPrices = { 'BBCA': 5800, 'BBRI': 3100, 'BMRI': 3990, 'BBNI': 3570, 'BRIS': 1200 };
+  const entryPrice = priceOverride || rfPred.latest_close || defaultPrices[_predTicker] || 5000;
+  _lastKnownPrice = entryPrice;
+
+  const isNaik = rfPred.signal === 'NAIK';
+  const prob   = rfPred.probability != null ? rfPred.probability : 0.5;
+
+  let recommendation = 'HOLD / WAIT & SEE';
+  let recClass = 'badge-warn';
+  let recDesc = 'Sinyal pasar masih konsolidasi, disarankan menunggu konfirmasi tren berikutnya.';
+
+  if (isNaik) {
+    if (prob >= 0.58) {
+      recommendation = '🚀 STRONG BUY';
+      recClass = 'badge-bull';
+      recDesc = 'Model Random Forest mendeteksi momentum beli yang kuat dengan probabilitas tinggi.';
+    } else {
+      recommendation = '📈 SPECULATIVE BUY';
+      recClass = 'badge-bull';
+      recDesc = 'Peluang kenaikan terbuka, disarankan akumulasi bertahap dengan manajemen risiko ketat.';
+    }
+  } else {
+    recommendation = '⚠️ WAIT & SEE / AVOID';
+    recClass = 'badge-bear';
+    recDesc = 'Model memprediksi potensi stagnan atau koreksi turun. Tunda pembelian baru.';
+  }
+
+  if (badge) {
+    badge.className = `badge ${recClass}`;
+    badge.textContent = recommendation;
+  }
+
+  // Hitung Level Take Profit (+3.5%) dan Stop Loss (-2.0%)
+  const tpPrice = Math.round(entryPrice * 1.035 / 5) * 5;  // pembulatan fraksi saham BEI
+  const slPrice = Math.round(entryPrice * 0.980 / 5) * 5;
+  const tpGain  = ((tpPrice - entryPrice) / entryPrice * 100).toFixed(1);
+  const slLoss  = ((slPrice - entryPrice) / entryPrice * 100).toFixed(1);
+
+  container.innerHTML = `
+    <div style="display:grid;grid-template-columns:repeat(auto-fit, minmax(200px, 1fr));gap:var(--space-3);margin-bottom:var(--space-3)">
+      <div style="background:var(--color-surface-2);padding:var(--space-3);border-radius:8px">
+        <div style="font-size:0.75rem;color:var(--color-text-3)">Harga Acuan (Entry)</div>
+        <div style="font-size:1.25rem;font-weight:700;color:var(--color-text-1)">${formatCurrency(entryPrice)}</div>
+        <div style="font-size:0.7rem;color:var(--color-text-3)">Harga pasar penutupan terakhir</div>
+      </div>
+      <div style="background:var(--color-surface-2);padding:var(--space-3);border-radius:8px;border-left:3px solid var(--color-bull)">
+        <div style="font-size:0.75rem;color:var(--color-bull);font-weight:600">🎯 Target Ambil Untung (TP)</div>
+        <div style="font-size:1.25rem;font-weight:700;color:var(--color-bull)">${formatCurrency(tpPrice)}</div>
+        <div style="font-size:0.7rem;color:var(--color-bull)">Potensi Gain: +${tpGain}%</div>
+      </div>
+      <div style="background:var(--color-surface-2);padding:var(--space-3);border-radius:8px;border-left:3px solid var(--color-bear)">
+        <div style="font-size:0.75rem;color:var(--color-bear);font-weight:600">🛡️ Batas Kerugian (Stop Loss)</div>
+        <div style="font-size:1.25rem;font-weight:700;color:var(--color-bear)">${formatCurrency(slPrice)}</div>
+        <div style="font-size:0.7rem;color:var(--color-bear)">Batas Risiko: ${slLoss}%</div>
+      </div>
+      <div style="background:var(--color-surface-2);padding:var(--space-3);border-radius:8px">
+        <div style="font-size:0.75rem;color:var(--color-text-3)">Risk / Reward Ratio</div>
+        <div style="font-size:1.25rem;font-weight:700;color:var(--color-accent)">1 : 1.75</div>
+        <div style="font-size:0.7rem;color:var(--color-text-3)">Strategi terukur & rasional</div>
+      </div>
+    </div>
+    <div style="font-size:0.8rem;color:var(--color-text-2);background:rgba(255,255,255,0.02);padding:var(--space-2) var(--space-3);border-radius:6px">
+      💡 <strong>Catatan Strategi:</strong> ${recDesc}
+    </div>
+  `;
+
+  // Update kalkulator simulasi
+  calculateCapitalSimulation();
+}
+
+// ── 💵 Kalkulator Simulasi Modal Investasi ─────────────────────
+function calculateCapitalSimulation() {
+  const capInput = document.getElementById('sim-capital');
+  const capital  = parseFloat(capInput?.value) || 10000000;
+  const price    = _lastKnownPrice || 5000;
+
+  const lotPrice = price * 100; // 1 lot = 100 lembar
+  const lots     = Math.floor(capital / lotPrice);
+  const totalCost = lots * lotPrice;
+  const remainingCash = capital - totalCost;
+
+  // TP +3.5%, SL -2.0%
+  const potentialProfit = Math.round(totalCost * 0.035);
+  const potentialLoss   = Math.round(totalCost * 0.020);
+
+  const el = id => document.getElementById(id);
+  if (el('sim-lots')) el('sim-lots').textContent = `${lots.toLocaleString('id-ID')} Lot (${(lots * 100).toLocaleString('id-ID')} lembar)`;
+  if (el('sim-total-cost')) el('sim-total-cost').textContent = `${formatCurrency(totalCost)} (Sisa Kas: ${formatCurrency(remainingCash)})`;
+  if (el('sim-tp-profit')) el('sim-tp-profit').textContent = `+${formatCurrency(potentialProfit)} (+3.5%)`;
+  if (el('sim-sl-loss')) el('sim-sl-loss').textContent = `-${formatCurrency(potentialLoss)} (-2.0%)`;
+}
+
+// ── 📥 Unduh Riwayat Prediksi ke Format CSV (Excel) ───────────
+function exportHistoryToCSV() {
+  if (!_currentHistoryCache || !_currentHistoryCache.length) {
+    showToast('Peringatan', 'Belum ada data riwayat untuk diunduh', 'warning');
+    return;
+  }
+
+  const headers = ['Tanggal Prediksi', 'Emiten', 'Algoritma', 'Sinyal', 'Probabilitas (%)', 'Label Aktual', 'Evaluasi Hasil'];
+  const rows = _currentHistoryCache.map(p => {
+    const isNaik = p.signal === 'NAIK';
+    const probStr = p.probability != null ? (p.probability * 100).toFixed(1) : '';
+    const actualStr = p.actual_class != null ? (p.actual_class === 1 ? 'Naik' : 'Tidak Naik') : 'Menunggu';
+    let resultStr = '—';
+    if (p.actual_class != null) {
+      resultStr = p.predicted_class === p.actual_class ? 'BENAR' : 'SALAH';
+    }
+
+    return [
+      `"${p.prediction_date}"`,
+      `"${_predTicker}"`,
+      `"${p.algorithm}"`,
+      `"${p.signal}"`,
+      `"${probStr}"`,
+      `"${actualStr}"`,
+      `"${resultStr}"`
+    ].join(',');
+  });
+
+  const csvContent = '\uFEFF' + [headers.join(','), ...rows].join('\r\n');
+  const blob = new Blob([csvContent], { type: 'text/csv;charset=utf-8;' });
+  const url  = URL.createObjectURL(blob);
+  const a    = document.createElement('a');
+  a.href     = url;
+  a.download = `Riwayat_Prediksi_${_predTicker}_${new Date().toISOString().split('T')[0]}.csv`;
+  document.body.appendChild(a);
+  a.click();
+  document.body.removeChild(a);
+  URL.revokeObjectURL(url);
+
+  showToast('Berhasil Diunduh', `File CSV riwayat ${_predTicker} berhasil disimpan`, 'success');
 }

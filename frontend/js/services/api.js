@@ -214,6 +214,15 @@ const RealtimeAPI = {
   },
 };
 
+// ── Market News & Sentiment API ────────────────────────────────
+const NewsAPI = {
+  /**
+   * GET /news/{ticker}
+   * Ambil berita terkini & skor sentimen pasar untuk emiten
+   */
+  getNews: (ticker, limit = 6) => apiFetch(`/news/${ticker}?limit=${limit}`),
+};
+
 // ── Backtesting (derived from predictions history) ────────────
 const BacktestAPI = {
   /**

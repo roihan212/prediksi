@@ -106,6 +106,34 @@ async function renderPrediction(container) {
       </div>
     </div>
 
+    <!-- 📰 Analisis Sentimen Berita Keuangan (Hybrid Model) -->
+    <div class="card" style="margin-bottom:var(--space-5)">
+      <div class="card-header" style="flex-wrap:wrap;gap:var(--space-2)">
+        <div style="display:flex;align-items:center;gap:var(--space-2)">
+          <span class="card-title">📰 Analisis Sentimen Berita Pasar (Model Hybrid)</span>
+          <span id="news-sentiment-badge" class="badge badge-warn">Memuat Sentimen...</span>
+        </div>
+        <button class="btn btn-outline btn-sm" onclick="loadStockNews()">🔄 Perbarui Berita</button>
+      </div>
+
+      <!-- Hybrid Consensus Banner -->
+      <div id="hybrid-consensus-box" style="padding:var(--space-3) var(--space-4);background:rgba(255,255,255,0.02);border-bottom:1px solid var(--color-border);font-size:0.85rem;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:var(--space-3)">
+        <div>
+          <strong>Sintesis Keputusan Hybrid:</strong>
+          <span id="hybrid-consensus-text" style="margin-left:6px;color:var(--color-text-2)">Mengkombinasikan sinyal Random Forest dan analisis leksikon berita...</span>
+        </div>
+        <div id="news-score-display" style="font-family:'JetBrains Mono',monospace;font-weight:700;font-size:0.9rem">
+          Skor: —
+        </div>
+      </div>
+
+      <!-- News Articles List -->
+      <div id="news-articles-container" style="padding:var(--space-4);display:grid;grid-template-columns:repeat(auto-fit, minmax(280px, 1fr));gap:var(--space-3)">
+        <div class="skeleton" style="height:90px;border-radius:8px"></div>
+        <div class="skeleton" style="height:90px;border-radius:8px"></div>
+      </div>
+    </div>
+
     <!-- Riwayat Prediksi + Filter Tanggal -->
     <div class="card" style="margin-bottom:var(--space-5)">
       <div class="card-header" style="flex-wrap:wrap;gap:var(--space-3)">
@@ -180,6 +208,7 @@ async function loadPredictionData() {
     return;
   }
   await loadPredictionHistory();
+  loadStockNews();
 }
 
 // ── Load Prediksi REAL-TIME dari Yahoo Finance ─────────────────
@@ -211,6 +240,7 @@ async function loadRealtimePrediction() {
   }
 
   await loadPredictionHistory();
+  loadStockNews();
 }
 
 function updateInfoBar(data) {
@@ -534,4 +564,86 @@ function exportHistoryToCSV() {
   URL.revokeObjectURL(url);
 
   showToast('Berhasil Diunduh', `File CSV riwayat ${_predTicker} berhasil disimpan`, 'success');
+}
+
+// ── 📰 Analisis Sentimen Berita Pasar (Model Hybrid) ──────────
+async function loadStockNews() {
+  const badge       = document.getElementById('news-sentiment-badge');
+  const articlesDiv = document.getElementById('news-articles-container');
+  const scoreDisp   = document.getElementById('news-score-display');
+  const hybridText  = document.getElementById('hybrid-consensus-text');
+
+  if (!articlesDiv) return;
+
+  try {
+    const data = await NewsAPI.getNews(_predTicker, 6);
+
+    // Update Badge
+    let badgeClass = 'badge-warn';
+    if (data.status_color === 'green') badgeClass = 'badge-bull';
+    else if (data.status_color === 'red') badgeClass = 'badge-bear';
+
+    if (badge) {
+      badge.className = `badge ${badgeClass}`;
+      badge.textContent = `Sentimen: ${data.overall_sentiment}`;
+    }
+
+    if (scoreDisp) {
+      const sign = data.sentiment_score > 0 ? '+' : '';
+      const scoreColor = data.sentiment_score > 0 ? 'var(--color-bull)' : (data.sentiment_score < 0 ? 'var(--color-bear)' : 'var(--color-text-2)');
+      scoreDisp.innerHTML = `Skor Sentimen: <span style="color:${scoreColor}">${sign}${data.sentiment_score.toFixed(2)}</span>`;
+    }
+
+    // Hybrid Synthesis: Gabungkan dengan Sinyal Model Random Forest
+    if (hybridText) {
+      const rfCard = document.getElementById('pred-card-RANDOM_FOREST');
+      const isRfNaik = rfCard?.innerText.includes('NAIK');
+
+      if (isRfNaik && data.sentiment_score >= 0.15) {
+        hybridText.innerHTML = `<strong style="color:var(--color-bull)">KONSENSUS KUAT (BULLISH CONVERGENCE)</strong> — Model ML Teknikal dan Sentimen Berita sama-sama positif. Keyakinan beli sangat tinggi.`;
+      } else if (!isRfNaik && data.sentiment_score <= -0.15) {
+        hybridText.innerHTML = `<strong style="color:var(--color-bear)">KONSENSUS KUAT (BEARISH CONVERGENCE)</strong> — Teknikal dan berita pasar sama-sama mengindikasikan tekanan jual/koreksi.`;
+      } else if (isRfNaik && data.sentiment_score <= -0.15) {
+        hybridText.innerHTML = `<strong style="color:var(--color-warn)">DIVERGENSI PASAR</strong> — Teknikal memprediksi naik, namun sentimen berita cenderung negatif. Waspadai volatilitas.`;
+      } else {
+        hybridText.innerHTML = `<strong style="color:var(--color-accent)">MODERATE SIGNAL</strong> — Sentimen berita netral/berimbang (${data.distribution.positif} positif, ${data.distribution.negatif} negatif). Tren didominasi sinyal teknikal.`;
+      }
+    }
+
+    // Render Articles
+    if (!data.articles || !data.articles.length) {
+      articlesDiv.innerHTML = `<p style="color:var(--color-text-3);font-size:0.85rem">Belum ada berita terkini untuk emiten ${_predTicker}.</p>`;
+      return;
+    }
+
+    articlesDiv.innerHTML = data.articles.map(a => {
+      let tagClass = 'badge-warn';
+      let tagIcon = '⚪';
+      if (a.sentiment_label === 'POSITIF') { tagClass = 'badge-bull'; tagIcon = '▲'; }
+      else if (a.sentiment_label === 'NEGATIF') { tagClass = 'badge-bear'; tagIcon = '▼'; }
+
+      return `
+        <div style="background:var(--color-surface-2);padding:var(--space-3);border-radius:8px;border:1px solid var(--color-border);display:flex;flex-direction:column;justify-content:space-between;gap:var(--space-2)">
+          <div>
+            <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:var(--space-1)">
+              <span style="font-size:0.7rem;color:var(--color-text-3);font-weight:600">${a.source || 'Media'}</span>
+              <span class="badge ${tagClass}" style="font-size:0.65rem;padding:1px 6px">${tagIcon} ${a.sentiment_label}</span>
+            </div>
+            <a href="${a.link || '#'}" target="_blank" style="font-size:0.825rem;font-weight:600;color:var(--color-text-1);text-decoration:none;line-height:1.35;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden">
+              ${a.title}
+            </a>
+          </div>
+          <div style="font-size:0.7rem;color:var(--color-text-3);display:flex;justify-content:space-between;align-items:center;border-top:1px solid rgba(255,255,255,0.04);padding-top:var(--space-1)">
+            <span>${a.pub_date ? a.pub_date.split(' ').slice(1,4).join(' ') : 'Hari ini'}</span>
+            <span style="font-family:'JetBrains Mono',monospace;color:var(--color-accent)">Skor: ${a.sentiment_score > 0 ? '+' : ''}${a.sentiment_score}</span>
+          </div>
+        </div>
+      `;
+    }).join('');
+
+  } catch (e) {
+    if (articlesDiv) {
+      articlesDiv.innerHTML = `<p style="color:var(--color-text-3);font-size:0.8rem">Gagal memuat berita: ${e.message}</p>`;
+    }
+  }
 }

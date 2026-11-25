@@ -1,0 +1,42 @@
+[
+  {
+    "ticker": "BBCA.JK",
+    "company_name": "Bank Central Asia",
+    "last_close": 5800.0,
+    "change_pct": 2.2,
+    "signal": "STAGNAN/TURUN",
+    "probability": 0.3873
+  },
+  {
+    "ticker": "BBNI.JK",
+    "company_name": "Bank Negara Indonesia",
+    "last_close": 3570.0,
+    "change_pct": 0.85,
+    "signal": "STAGNAN/TURUN",
+    "probability": 0.483
+  },
+  {
+    "ticker": "BBRI.JK",
+    "company_name": "Bank Rakyat Indonesia",
+    "last_close": 3100.0,
+    "change_pct": 0.98,
+    "signal": "STAGNAN/TURUN",
+    "probability": 0.4496
+  },
+  {
+    "ticker": "BMRI.JK",
+    "company_name": "Bank Mandiri",
+    "last_close": 3990.0,
+    "change_pct": 2.84,
+    "signal": "STAGNAN/TURUN",
+    "probability": 0.4531
+  },
+  {
+    "ticker": "BRIS.JK",
+    "company_name": "BRI Syariah",
+    "last_close": 1200.0,
+    "change_pct": 1.27,
+    "signal": "STAGNAN/TURUN",
+    "probability": 0.481
+  }
+]

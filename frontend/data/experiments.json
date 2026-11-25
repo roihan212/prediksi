@@ -1,0 +1,140 @@
+[
+  {
+    "id": 3,
+    "experiment_name": "Logistic Regression (Linear Baseline)",
+    "algorithm": "LOGISTIC_REGRESSION",
+    "ticker": null,
+    "parameters": {},
+    "accuracy": 0.5028,
+    "precision": 0.4391,
+    "recall": 0.6306,
+    "f1_score": 0.5177,
+    "auc_roc": 0.5267,
+    "confusion_matrix": [
+      [
+        459,
+        663
+      ],
+      [
+        304,
+        519
+      ]
+    ],
+    "feature_importance": {
+      "rsi_14": 0.001479404647733183,
+      "macd_line": 0.05670970321624507,
+      "macd_signal": 0.04866648208645856,
+      "macd_histogram": 0.03709613749979446,
+      "sma_20": 0.27543831274827973,
+      "sma_50": 1.1160654379376165,
+      "ema_20": 0.030560229039295242,
+      "bb_upper": 0.04701656278864853,
+      "bb_middle": 0.27543831274827973,
+      "bb_lower": 0.5150538247878836,
+      "stoch_k": 0.33954728594554456,
+      "stoch_d": 0.3450370800215025,
+      "atr_14": 0.01970171148864256,
+      "obv": 0.03570461363836938
+    },
+    "win_rate": null,
+    "max_drawdown": null,
+    "profitability_factor": null,
+    "is_active": true,
+    "train_start_date": null,
+    "train_end_date": null,
+    "created_at": "2026-11-10 08:45:35",
+    "notes": "Inisialisasi pipeline otomatis"
+  },
+  {
+    "id": 1,
+    "experiment_name": "Random Forest (Model Utama)",
+    "algorithm": "RANDOM_FOREST",
+    "ticker": null,
+    "parameters": {},
+    "accuracy": 0.5172,
+    "precision": 0.4223,
+    "recall": 0.3827,
+    "f1_score": 0.4015,
+    "auc_roc": 0.506,
+    "confusion_matrix": [
+      [
+        691,
+        431
+      ],
+      [
+        508,
+        315
+      ]
+    ],
+    "feature_importance": {
+      "rsi_14": 0.0833577300450893,
+      "macd_line": 0.07656626427712986,
+      "macd_signal": 0.07608454383795282,
+      "macd_histogram": 0.08174923595825417,
+      "sma_20": 0.05577838455824573,
+      "sma_50": 0.061626704194183375,
+      "ema_20": 0.05839897623735682,
+      "bb_upper": 0.06396083496456845,
+      "bb_middle": 0.05622885098022796,
+      "bb_lower": 0.06482390404746034,
+      "stoch_k": 0.08011998245325043,
+      "stoch_d": 0.08359902190008972,
+      "atr_14": 0.07873201568402037,
+      "obv": 0.07897355086217049
+    },
+    "win_rate": null,
+    "max_drawdown": null,
+    "profitability_factor": null,
+    "is_active": false,
+    "train_start_date": null,
+    "train_end_date": null,
+    "created_at": "2026-11-10 08:45:34",
+    "notes": "Inisialisasi pipeline otomatis"
+  },
+  {
+    "id": 2,
+    "experiment_name": "Decision Tree (Baseline)",
+    "algorithm": "DECISION_TREE",
+    "ticker": null,
+    "parameters": {},
+    "accuracy": 0.5157,
+    "precision": 0.4309,
+    "recall": 0.4508,
+    "f1_score": 0.4406,
+    "auc_roc": 0.507,
+    "confusion_matrix": [
+      [
+        632,
+        490
+      ],
+      [
+        452,
+        371
+      ]
+    ],
+    "feature_importance": {
+      "rsi_14": 0.08850054790202608,
+      "macd_line": 0.08362061905529995,
+      "macd_signal": 0.08026594246030776,
+      "macd_histogram": 0.10729390010802159,
+      "sma_20": 0.02355983333637536,
+      "sma_50": 0.0371195234244791,
+      "ema_20": 0.030438476240428967,
+      "bb_upper": 0.04404530494408376,
+      "bb_middle": 0.019713065949563048,
+      "bb_lower": 0.04370496347370123,
+      "stoch_k": 0.11845234591470663,
+      "stoch_d": 0.1172307530830475,
+      "atr_14": 0.09551824710707148,
+      "obv": 0.11053647700088767
+    },
+    "win_rate": null,
+    "max_drawdown": null,
+    "profitability_factor": null,
+    "is_active": false,
+    "train_start_date": null,
+    "train_end_date": null,
+    "created_at": "2026-11-10 08:45:34",
+    "notes": "Inisialisasi pipeline otomatis"
+  }
+]

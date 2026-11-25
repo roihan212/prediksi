@@ -1,0 +1,77 @@
+{
+  "ticker": "BRIS",
+  "overall_sentiment": "BULLISH / POSITIF",
+  "sentiment_score": 0.42,
+  "status_color": "green",
+  "distribution": {
+    "positif": 4,
+    "negatif": 0,
+    "netral": 2,
+    "total_news": 6
+  },
+  "articles": [
+    {
+      "title": "Laba BRIS Naik 10%, Rekomendasi Buy Target Harga Rp2.450",
+      "source": "Bareksa.com",
+      "link": "https://news.google.com/rss/articles/CBMiowFBVV95cUxOMmtFNFJUSzMtOEl2WE9NVFpHSVFabmpueHNRLVQtajlvS2RWendSS1ctaFV0TFBoaXdORkVVdmk1eEhqRXlHcGJOMzJVLVNoTTFYWGJ5Q1h1czh5a1hxMzFHcFVJQlk3elJsTGZBcWhJR1NNTDZyS25vNHhBc0VKNlFPdVZxWVlUQlJaRjNzbXduYVA2NWplRnJGSFZZVWRzeTVz?oc=5",
+      "pub_date": "Tue, 24 Nov 2026 08:17:18 GMT",
+      "sentiment_score": 1.0,
+      "sentiment_label": "POSITIF",
+      "keywords": [
+        "laba",
+        "buy"
+      ]
+    },
+    {
+      "title": "BSI (BRIS) Akui Rights Issue Berpotensi Tekan Laba Per Saham",
+      "source": "CNBC Indonesia",
+      "link": "https://news.google.com/rss/articles/CBMivwFBVV95cUxNLVlrel9lQmdkUm14bTJobjhyT1hrNmJ5VnpjQzdRNDRHRXJWSnRFcDVjWU1MZnZiRUpUN1UwbDFiMUVfTG4wcnNBa0NzVHFyR1BrZGxWN2xXa0FnczBzc1FHSFVtM1VISnlnWHh3Q0QyaXE4UXJqbGdTMzdYMUp2ZVZPM0FGamQwdTZUd3BMeW9TRWlEQVBCUkQ5aUlfUXZqOVJpT0xxRURxVXNYUUhxLUZseE4xdl9pNy1VNFhNb9IBxAFBVV95cUxNM0lvX2JhWEFpMC15blZ4NDBUamlidms1cy1TNHhBXy1YdGtFcEJ6NVcwMm5YR3ZhQlcyYXlJWmlYcGN5cXc4aktYY0tJYk5uaHFpYnZ0eFdtc25YTTdUeC1rQTNGQlp2a1E4WjRfZF9rT015UDFGYldIeUsxQUozbjh1Z25ibWMyLVI5SjdaemdGbXpEWldvZ1NsTHQ5bFhsV0xETWhacFAxd3NWTDlPako4amh3QUJDS3pXemZDWXI3cUJM?oc=5",
+      "pub_date": "Tue, 24 Nov 2026 08:58:17 GMT",
+      "sentiment_score": 0.5,
+      "sentiment_label": "POSITIF",
+      "keywords": [
+        "laba"
+      ]
+    },
+    {
+      "title": "BSI Terbitkan 6,8 Miliar Saham untuk Perkuat Modal",
+      "source": "cwibc.co.id",
+      "link": "https://news.google.com/rss/articles/CBMieEFVX3lxTE1NY3FJaE5fZjJXNmVsX2xvOGV2S3Q1R21pZjZWQ0g0c2taclRvSFlaUE1iajJsVFotVVdIQjVMZHBNa3VnT3hqUGROU2xBMHRFRzVBV3paY1E2SElwVEx2eDA1ZVdvSS1qbHNBdmlnQ19taGpMYlBLZw?oc=5",
+      "pub_date": "Tue, 24 Nov 2026 12:55:58 GMT",
+      "sentiment_score": 0.0,
+      "sentiment_label": "NETRAL",
+      "keywords": []
+    },
+    {
+      "title": "Indo Premier Pertahankan Rekomendasi Buy Saham BSI (BRIS), Target Harga Rp 2.900",
+      "source": "kontan.co.id",
+      "link": "https://news.google.com/rss/articles/CBMisAFBVV95cUxPV3hsNTJnakRlMFJmWnZKSnVHbWdEdnBUZlo4NU9heDlvWVB2aDhIVm5sQkNETGdUSWpZSUpUeHpZbVdqYUNpd05nTjVualBJVTZsR0Y2bFZtUXR5Ykx0SllQNXZpX1BaOExEN1lQRGJwRFg0U1JPTHY1WnM2Y2oydkFzNU15N1R0SUw4VUNZd0lTcjZuNkZPaXJVczlQQ21FSTRadHkyTE9GbnBmbEZmUdIBqgFBVV95cUxONmw0UGZRLWhjaVVKRjlPeFV3T3RzSjFtLVRpSEhpb0ZQR3QxcERCcXJNbThQdEVVWkxwYTRNSHQ5V1I4QTI5ZEhvQkFwSFFocnFCX3lvQ3FtZ2p2R3lIV1FuODcwV2hiRzJBSzU5TGVZM3JQODlreXpISjFmWFJUUVpOd0t5Rzg5cEtqdkEtS09lVjU2c3hPcm81a3BUV2t6b080SnlOV21CQQ?oc=5",
+      "pub_date": "Tue, 24 Nov 2026 06:31:49 GMT",
+      "sentiment_score": 0.5,
+      "sentiment_label": "POSITIF",
+      "keywords": [
+        "buy"
+      ]
+    },
+    {
+      "title": "Tekanan Global Naik, Cermati Saham BRIS, BULL dan PGEO Hari Ini",
+      "source": "SWA.co.id",
+      "link": "https://news.google.com/rss/articles/CBMilgFBVV95cUxQVHEwVl9ySlN0U2RCMmMxTTBndEQ4cVNPQ2RuRGZ3allzZnZLLUE0NDJXQnVselN3aktsNl9fRnY0LUJPekdCc3lzdlJTU3Rtdm5iZVRXamFzdE1kMWJMbDZRM2UxS3Z3VF9tOU96Y1BnUHhvNmd3aGJ1c3NoQktkcjFhYUlVNk0xbmRyaVV6NVhDSHJPZVE?oc=5",
+      "pub_date": "Mon, 23 Nov 2026 03:02:00 GMT",
+      "sentiment_score": 0.0,
+      "sentiment_label": "NETRAL",
+      "keywords": []
+    },
+    {
+      "title": "Terusir dari FTSE, Laba BRIS Tembus Rp6,12 Triliun Kuartal III",
+      "source": "Emitennews.com",
+      "link": "https://news.google.com/rss/articles/CBMilwFBVV95cUxOY3l3QlVlNm1xOHlGSE5mQ2xvenZqLUF3aGdaOU5oUkdxSXVpRi1lbWkwV05KaXRHM2VKbnljMUxsUzNFYVA1Z0lHQ09CUkxFUmpCcFNQcW9WUG8zWS1hVlgzbjBtYk40R21IeXF3S3h3MlBlTmhDS0dieHhuQ0J4U2lUWGU0YjlTX1BJOFFYT3JFNXRTRUFB?oc=5",
+      "pub_date": "Tue, 24 Nov 2026 03:29:00 GMT",
+      "sentiment_score": 0.5,
+      "sentiment_label": "POSITIF",
+      "keywords": [
+        "laba"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,79 @@
+{
+  "ticker": "BBCA",
+  "overall_sentiment": "BULLISH / POSITIF",
+  "sentiment_score": 0.5,
+  "status_color": "green",
+  "distribution": {
+    "positif": 5,
+    "negatif": 0,
+    "netral": 1,
+    "total_news": 6
+  },
+  "articles": [
+    {
+      "title": "Asing Borong Saham BBCA Rp174,55 Miliar, Harga Naik 2,25% di Tengah Penjualan Saham Bank BUMN",
+      "source": "Ajaib",
+      "link": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxPV19SbDlVeV93ZXg0SnBlUHp1SXFOaFM2bmlDSE1Ub0dOaHJFSEU0dUxqcnp4Y0NLajE2dHM1d2s0MkFnSThBYWVDVXdXMnlVLVJNNmkyem9SUXFVOXUzQUU5djJobGhUeWdIZmRydlZmdGxoRnpKdUZRMV9rQVFwQlJ4ZUcyQUY3dG9ObzRkOWRrWUczenJ6aDdEZ0xTbTRpamhod1cwcGpGMmhiOVVCelR6N1ZHamNtX3daRUN3UFE?oc=5",
+      "pub_date": "Tue, 24 Nov 2026 05:15:25 GMT",
+      "sentiment_score": 0.5,
+      "sentiment_label": "POSITIF",
+      "keywords": [
+        "borong"
+      ]
+    },
+    {
+      "title": "Asing beli saham-saham ini saat IHSG naik 0,25% di sesi I",
+      "source": "IDNFinancials",
+      "link": "https://news.google.com/rss/articles/CBMiogFBVV95cUxNX05STTJmM3hDOVUtc3hEUFBEZzZRTzNOZkozNWc0dUhUcUVNRW1CdW0yRXhPVWJiOGR3cWtHQVNXWkNLRXhwNlNqdEpqQWpndkJveFZwT3lTenVvQ2x5R1pQUlJWVnBUM2lNVkhkcHc4Wmdwc18yLUFQUm1MZFFseE1HZkk5SlZSeFEtaXNveDZhaUdXS0lJVU1lVVVCY0k0M0E?oc=5",
+      "pub_date": "Tue, 24 Nov 2026 06:10:00 GMT",
+      "sentiment_score": 0.0,
+      "sentiment_label": "NETRAL",
+      "keywords": []
+    },
+    {
+      "title": "Diskon Valuasi Bikin Asing Lirik BBCA, Tapi Satu Syarat Besar Untuk Rebound Berlanjut",
+      "source": "TradingView",
+      "link": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE5pUm5IdEp5UEhpLW4xb1VqdjQ0aEdFUTJlQUF1a2l1TFI5azF0V1RWZU1XT2RPUkVYaXVrNEUtSjk3UmZkT3dWWWQ2QkJMQmF4SFVUQ3ExYk14Q3NEcF9ZZXNGSFItUQ?oc=5",
+      "pub_date": "Mon, 23 Nov 2026 02:00:00 GMT",
+      "sentiment_score": 0.5,
+      "sentiment_label": "POSITIF",
+      "keywords": [
+        "rebound"
+      ]
+    },
+    {
+      "title": "Saham BBCA Menguat 16,47% dan Siapkan Dividen Rp 35",
+      "source": "Demokratis.co.id",
+      "link": "https://news.google.com/rss/articles/CBMia0FVX3lxTE9pWGFpc1BTY3hNUDhjSC1qdlF4YkswSFFDUDdlclBpdmpjaTF2ampJZlJsbnUyVHZjVk00MjNySTBuRHMyOERzM19WX2VlOTRvY1JBNTA3QTBKWVJEYWl1WVhLQ0tfd0lxVTZn?oc=5",
+      "pub_date": "Tue, 24 Nov 2026 23:04:00 GMT",
+      "sentiment_score": 1.0,
+      "sentiment_label": "POSITIF",
+      "keywords": [
+        "menguat",
+        "dividen"
+      ]
+    },
+    {
+      "title": "IHSG Naik 0,49% Jadi 5.241 Hari Ini (24/11), Net Buy Asing Masuk di Saham-Saham Ini",
+      "source": "Pusat Data Kontan",
+      "link": "https://news.google.com/rss/articles/CBMisgFBVV95cUxQajlEVVIwYzVoMm5sZ1hXckhRd2N3QnhDajJMMFI5YVBWSnIwdHgwSDFpRW5jMUlTb3o2TlF0Q2NRRlN4akJ1VUpWSGpmZ0ZCMGFpUVdXZ3JrY3BiZWdDdEN1a3FudEZ1dUpLdHQ5SDNCbDRHLWJsR2xycXE3ZG9hRlpiM0JjRWdvOGZ5UF9HZGY2NmNwSFdndklrc0hfUFdHdTQwSTdrbWNhOEhfNG1aMHln?oc=5",
+      "pub_date": "Tue, 24 Nov 2026 12:06:50 GMT",
+      "sentiment_score": 0.5,
+      "sentiment_label": "POSITIF",
+      "keywords": [
+        "buy"
+      ]
+    },
+    {
+      "title": "BCA Mulai Realisasikan Pembelian Kembali (Buyback) Saham",
+      "source": "BCA.co.id",
+      "link": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxQSDN2UUo4XzdDR0o2Sm4xUUdETWJPaDBrQUp3NS1XTGc4dmUxb3J6blBNMGlvZU11XzhuWjNGWWV1YVN0VUdpZDU5Zk9YYTFuZ0RLLXplYnhOcFdmd190YldQQVV5VmZuR01CdXpnMUJWM28zSUZFM2VmbXdRakZpYUNtckdDYWlmdl9vUThxcHpyT21jcUxLVGR6Wm9pV0x2bEpUODhpYnhBRzFiTFE1UnkxNDREM1ZQbjNFVVo2SWxHR3V5eUpwV3plWTRIX21lMGNEWWk1ZERBZw?oc=5",
+      "pub_date": "Wed, 29 Apr 2026 07:00:00 GMT",
+      "sentiment_score": 0.5,
+      "sentiment_label": "POSITIF",
+      "keywords": [
+        "buyback"
+      ]
+    }
+  ]
+}

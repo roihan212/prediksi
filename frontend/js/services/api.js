@@ -68,22 +68,135 @@ function getAuthHeaders() {
   return h;
 }
 
+// ── Static JSON Fallback (untuk GitHub Pages saat backend offline) ──
+let _usingStaticFallback = false;
+
+async function fetchStaticFallback(path) {
+  const [cleanPath, queryStr] = path.split('?');
+  const params = new URLSearchParams(queryStr || '');
+  const cleanTicker = (t) => t.replace(/\.JK$/i, '').toUpperCase();
+
+  let jsonFile = null;
+  let postProcess = (data) => data;
+
+  if (cleanPath === '/market/overview') {
+    jsonFile = 'data/market_overview.json';
+  } else if (cleanPath === '/stocks/' || cleanPath === '/stocks') {
+    jsonFile = 'data/stocks_list.json';
+  } else if (cleanPath === '/experiments/' || cleanPath === '/experiments') {
+    jsonFile = 'data/experiments.json';
+    const algo = params.get('algorithm');
+    if (algo) postProcess = (d) => d.filter(e => e.algorithm === algo.toUpperCase());
+  } else if (/^\/experiments\/(\d+)$/.test(cleanPath)) {
+    const id = parseInt(cleanPath.match(/^\/experiments\/(\d+)$/)[1], 10);
+    jsonFile = 'data/experiments.json';
+    postProcess = (d) => d.find(e => e.id === id) || d[0];
+  } else if (/^\/stocks\/([^/]+)$/.test(cleanPath)) {
+    const t = cleanTicker(cleanPath.match(/^\/stocks\/([^/]+)$/)[1]);
+    jsonFile = `data/stock_${t}.json`;
+  } else if (/^\/stocks\/([^/]+)\/prices$/.test(cleanPath)) {
+    const t = cleanTicker(cleanPath.match(/^\/stocks\/([^/]+)\/prices$/)[1]);
+    jsonFile = `data/prices_${t}.json`;
+    const limit = parseInt(params.get('limit') || '500', 10);
+    const start = params.get('start');
+    const end   = params.get('end');
+    postProcess = (d) => {
+      let arr = d;
+      if (start) arr = arr.filter(p => p.date >= start);
+      if (end)   arr = arr.filter(p => p.date <= end);
+      return arr.slice(-limit);
+    };
+  } else if (/^\/stocks\/([^/]+)\/indicators$/.test(cleanPath)) {
+    const t = cleanTicker(cleanPath.match(/^\/stocks\/([^/]+)\/indicators$/)[1]);
+    jsonFile = `data/indicators_${t}.json`;
+    const limit = parseInt(params.get('limit') || '100', 10);
+    postProcess = (d) => d.slice(-limit);
+  } else if (/^\/predictions\/([^/]+)\/latest$/.test(cleanPath)) {
+    const t = cleanTicker(cleanPath.match(/^\/predictions\/([^/]+)\/latest$/)[1]);
+    jsonFile = `data/pred_latest_${t}.json`;
+  } else if (/^\/realtime\/([^/]+)\/predict$/.test(cleanPath)) {
+    const t = cleanTicker(cleanPath.match(/^\/realtime\/([^/]+)\/predict$/)[1]);
+    jsonFile = `data/pred_latest_${t}.json`;
+    postProcess = (preds) => {
+      const first = preds[0] || {};
+      return {
+        ticker: t,
+        data_tanggal: first.latest_date || first.prediction_date || '',
+        harga_terakhir: first.latest_close || null,
+        prediksi_untuk: first.prediction_date || '',
+        timestamp: new Date().toISOString(),
+        predictions: preds,
+      };
+    };
+  } else if (/^\/(predictions|realtime)\/([^/]+)\/(history|history-by-date)$/.test(cleanPath)) {
+    const t = cleanTicker(cleanPath.match(/^\/(?:predictions|realtime)\/([^/]+)\/(?:history|history-by-date)$/)[2]);
+    jsonFile = `data/pred_history_${t}.json`;
+    const algo  = params.get('algorithm');
+    const start = params.get('start');
+    const end   = params.get('end');
+    const limit = parseInt(params.get('limit') || '200', 10);
+    postProcess = (d) => {
+      let arr = d;
+      if (algo)  arr = arr.filter(p => p.algorithm === algo.toUpperCase());
+      if (start) arr = arr.filter(p => p.prediction_date >= start);
+      if (end)   arr = arr.filter(p => p.prediction_date <= end);
+      return arr.slice(0, limit);
+    };
+  } else if (/^\/news\/([^/]+)$/.test(cleanPath)) {
+    const t = cleanTicker(cleanPath.match(/^\/news\/([^/]+)$/)[1]);
+    jsonFile = `data/news_${t}.json`;
+  }
+
+  if (!jsonFile) throw new Error('Endpoint tidak tersedia dalam mode offline.');
+
+  const res = await fetch(jsonFile);
+  if (!res.ok) throw new Error(`Snapshot data (${jsonFile}) tidak ditemukan.`);
+  const raw = await res.json();
+
+  if (!_usingStaticFallback) {
+    _usingStaticFallback = true;
+    console.info('ℹ️ StockPredict berjalan menggunakan Snapshot Data GitHub (Mode Mandiri)');
+  }
+  return postProcess(raw);
+}
+
 // ── Generic Fetch Wrapper ─────────────────────────────────────
 async function apiFetch(path, options = {}) {
+  const method = (options.method || 'GET').toUpperCase();
   const url = `${API_BASE}${path}`;
+  const controller = new AbortController();
+  // Timeout 3 detik untuk GET agar fallback cepat jika backend offline
+  const timeoutMs = method === 'GET' ? 3500 : 15000;
+  const timer = setTimeout(() => controller.abort(), timeoutMs);
+
   const config = {
     headers: getAuthHeaders(),
+    signal: controller.signal,
     ...options,
   };
+
   try {
     const res = await fetch(url, config);
+    clearTimeout(timer);
     if (!res.ok) {
+      // Jika error 5xx atau 404 tunnel saat GET, coba fallback statis
+      if (method === 'GET' && res.status >= 500) {
+        return await fetchStaticFallback(path);
+      }
       const err = await res.json().catch(() => ({ detail: res.statusText }));
       throw new Error(err.detail || `HTTP ${res.status}`);
     }
     return await res.json();
   } catch (e) {
-    if (e instanceof TypeError) {
+    clearTimeout(timer);
+    if (method === 'GET') {
+      try {
+        return await fetchStaticFallback(path);
+      } catch (fallbackErr) {
+        // Jika fallback juga gagal, tampilkan error asli
+      }
+    }
+    if (e instanceof TypeError || e.name === 'AbortError') {
       throw new Error('Tidak dapat terhubung ke server. Pastikan backend berjalan di port 8000.');
     }
     throw e;

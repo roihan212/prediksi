@@ -1,0 +1,35 @@
+[
+  {
+    "algorithm": "LOGISTIC_REGRESSION",
+    "experiment_name": "Logistic Regression (Linear Baseline)",
+    "prediction_date": "2026-11-25",
+    "predicted_class": 0,
+    "signal": "STAGNAN/TURUN",
+    "probability": 0.483,
+    "actual_class": null,
+    "latest_close": 3570.0,
+    "latest_date": "2026-11-24"
+  },
+  {
+    "algorithm": "RANDOM_FOREST",
+    "experiment_name": "Random Forest (Model Utama)",
+    "prediction_date": "2026-11-25",
+    "predicted_class": 0,
+    "signal": "STAGNAN/TURUN",
+    "probability": 0.43,
+    "actual_class": null,
+    "latest_close": 3570.0,
+    "latest_date": "2026-11-24"
+  },
+  {
+    "algorithm": "DECISION_TREE",
+    "experiment_name": "Decision Tree (Baseline)",
+    "prediction_date": "2026-11-25",
+    "predicted_class": 1,
+    "signal": "NAIK",
+    "probability": 1.0,
+    "actual_class": null,
+    "latest_close": 3570.0,
+    "latest_date": "2026-11-24"
+  }
+]

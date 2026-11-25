@@ -1,0 +1,32 @@
+[
+  {
+    "id": 1,
+    "ticker": "BBCA.JK",
+    "company_name": "Bank Central Asia",
+    "sector": "Perbankan"
+  },
+  {
+    "id": 3,
+    "ticker": "BBNI.JK",
+    "company_name": "Bank Negara Indonesia",
+    "sector": "Perbankan"
+  },
+  {
+    "id": 2,
+    "ticker": "BBRI.JK",
+    "company_name": "Bank Rakyat Indonesia",
+    "sector": "Perbankan"
+  },
+  {
+    "id": 4,
+    "ticker": "BMRI.JK",
+    "company_name": "Bank Mandiri",
+    "sector": "Perbankan"
+  },
+  {
+    "id": 5,
+    "ticker": "BRIS.JK",
+    "company_name": "BRI Syariah",
+    "sector": "Perbankan"
+  }
+]

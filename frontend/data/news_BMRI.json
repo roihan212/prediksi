@@ -1,0 +1,76 @@
+{
+  "ticker": "BMRI",
+  "overall_sentiment": "NETRAL / KONSOLIDASI",
+  "sentiment_score": 0.08,
+  "status_color": "yellow",
+  "distribution": {
+    "positif": 1,
+    "negatif": 0,
+    "netral": 5,
+    "total_news": 6
+  },
+  "articles": [
+    {
+      "title": "Dividen BMRI 2026: Jadwal & Besaran",
+      "source": "Ajaib",
+      "link": "https://news.google.com/rss/articles/CBMihAFBVV95cUxQQTZ3THdFdXF3ZWd6cHU2SE1tR0V5WEIxTWN1UmNMZFlkRW9lYjJGcFRQdDBoQnVUVDJsOTFHOE4xVzUwZVFsNWpGdXI2eER3MzVZOFZ2QlhCcm9OVldzc1A4cDhtaUdndy03MklnNjZPdlZTTGJqNEZieEtaa3FvR180UkE?oc=5",
+      "pub_date": "Tue, 24 Nov 2026 09:41:12 GMT",
+      "sentiment_score": 0.5,
+      "sentiment_label": "POSITIF",
+      "keywords": [
+        "dividen"
+      ]
+    },
+    {
+      "title": "Polemik Rekening Donasi Pati, Pakar Ekonomi Umsura Soroti Risiko Kepercayaan dan Saham Bank Mandiri",
+      "source": "Universitas Muhammadiyah Surabaya",
+      "link": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxQeWNvQVJpRDA0OXNDTGZ5cVBIcWhzQjY4QWhNYkttQnZCdWJseUFpTHhURVpYVG1jakoweFhXZzN0RTR4OWF6NEQ5LWY4UjBJcmo2dkpScXNUNGJZVVV5a3hENXN0OFhuRGxUUlNTcjBNUTZOdDdZbTctQk5XX25ONTc4WnB0a1BjSVVVNHJjWm1EVWFjeUZaREt3WGRHRE5ZcWpTdGN4cGVmZHM5OGpZSW1BWTJUQTJBeTYwVnprOThIeTlYaU0xemNkc2FXTktxemc?oc=5",
+      "pub_date": "Wed, 26 Aug 2026 04:03:24 GMT",
+      "sentiment_score": 0.0,
+      "sentiment_label": "NETRAL",
+      "keywords": []
+    },
+    {
+      "title": "Dividen Bank Mandiri (BMRI) Sudah Ex-Date, Masih Menarik Dikoleksi atau Justru Rawan Koreksi?",
+      "source": "Bareksa.com",
+      "link": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxPakYwUUNEdndmdnJ5OEZFWmdrS05KUVdxMXdOczA5Qk0xaXRna29QYU1Qdzc2Q0xlWTlDYWp6TTJqaHB2aTVJRDZQM3JTSjVubm1vRFZKclZlRkl3Wnd3WThfTHFmSE1kd0NWUHhoTkJjdGdpUzNLNm1kZTN1YThKeTJLVXdkZGRvMGd3cUJHYlJaNzl3WTNZdWJPdHhrQzRjZVUtOE9WREpiR1VUcExBU29pY1hraEJuLVZBNVpTYU4wVXJxY1FvcmJpY3EzWVpXQlhB?oc=5",
+      "pub_date": "Mon, 25 May 2026 07:00:00 GMT",
+      "sentiment_score": 0.0,
+      "sentiment_label": "NETRAL",
+      "keywords": [
+        "dividen",
+        "koreksi"
+      ]
+    },
+    {
+      "title": "5 Berita Terpopuler: MSCI, Emas, PIK2, dan Bank Mandiri",
+      "source": "Demokratis.co.id",
+      "link": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE52bHA1cjFKWGhKV2dHUlZQWG5Dd2RKM1FUeU9zR2VhbjJBSmgzTEZWa29WbUZjc3BLR0FCYjBmc0NUNUhGUmgtQ3FJMnJOR1RuWUMza3RWLXBQcURraGxYZVdfR0JtdW1a?oc=5",
+      "pub_date": "Tue, 24 Nov 2026 22:05:00 GMT",
+      "sentiment_score": 0.0,
+      "sentiment_label": "NETRAL",
+      "keywords": []
+    },
+    {
+      "title": "10 Saham dengan Nilai Net Sell Investor Asing Tertinggi",
+      "source": "Bloomberg Technoz",
+      "link": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxOR2FNNEpsUVQyN0Fzd0dyQ05oZlUwWXA4OXNnLWpMTjJwX3BoVFU0N09ZalpSUmU2SUNsTUpyWnhFRUNzeG53eWlOMUZ0dFVyUXRuTW0xR1k1dWZ4d2lwTXQ3Q0xVYld1M1dSdmFpNjNDOG5pbjV0LWctc2dpZkg2Y0NsSThHWGNxcndBdDZFb2xpcUN0OHpUUUpzWlppNUd1RzFBMzF6a0V0UUk?oc=5",
+      "pub_date": "Tue, 24 Nov 2026 00:50:02 GMT",
+      "sentiment_score": 0.0,
+      "sentiment_label": "NETRAL",
+      "keywords": [
+        "tertinggi",
+        "sell"
+      ]
+    },
+    {
+      "title": "Proyeksi BMRI \u2014 Target Harga untuk 2027",
+      "source": "TradingView",
+      "link": "https://news.google.com/rss/articles/CBMidEFVX3lxTE5SMFRJT0J5a0dHMmJWS1NtaVV6dHdSTVFwMWl2a1gxZmRJVC1BRU1PVy1XUFZacE1qMWphQ0JERTJySWNwV2F6THMtZ3h0Z3ZXYWZ0c1dNOGtCV3BBb1hGYXZrRUozdGdDOFdsSlNTWWFObkxw?oc=5",
+      "pub_date": "Thu, 25 Jun 2026 12:22:40 GMT",
+      "sentiment_score": 0.0,
+      "sentiment_label": "NETRAL",
+      "keywords": []
+    }
+  ]
+}

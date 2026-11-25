@@ -129,7 +129,7 @@ async function fetchStaticFallback(path) {
       };
     };
   } else if (/^\/(predictions|realtime)\/([^/]+)\/(history|history-by-date)$/.test(cleanPath)) {
-    const t = cleanTicker(cleanPath.match(/^\/(?:predictions|realtime)\/([^/]+)\/(?:history|history-by-date)$/)[2]);
+    const t = cleanTicker(cleanPath.match(/^\/(?:predictions|realtime)\/([^/]+)\/(?:history|history-by-date)$/)[1]);
     jsonFile = `data/pred_history_${t}.json`;
     const algo  = params.get('algorithm');
     const start = params.get('start');
@@ -163,6 +163,16 @@ async function fetchStaticFallback(path) {
 // ── Generic Fetch Wrapper ─────────────────────────────────────
 async function apiFetch(path, options = {}) {
   const method = (options.method || 'GET').toUpperCase();
+
+  // Di GitHub Pages tanpa custom backend URL, langsung pakai Snapshot JSON (0ms instan)
+  if (method === 'GET' && window.location.hostname.includes('github.io') && !localStorage.getItem('sp_backend_url')) {
+    try {
+      return await fetchStaticFallback(path);
+    } catch (e) {
+      // Lanjut coba fetch normal jika tidak ada di static
+    }
+  }
+
   const url = `${API_BASE}${path}`;
   const controller = new AbortController();
   // Timeout 3 detik untuk GET agar fallback cepat jika backend offline

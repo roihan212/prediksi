@@ -1,12 +1,12 @@
 {
   "ticker": "BBNI",
   "overall_sentiment": "NETRAL / KONSOLIDASI",
-  "sentiment_score": 0.0,
+  "sentiment_score": -0.08,
   "status_color": "yellow",
   "distribution": {
     "positif": 1,
-    "negatif": 1,
-    "netral": 4,
+    "negatif": 2,
+    "netral": 3,
     "total_news": 6
   },
   "articles": [
@@ -31,6 +31,28 @@
       "keywords": []
     },
     {
+      "title": "Asing belanja saham-saham ini saat IHSG turun 0,49% di sesi I",
+      "source": "IDNFinancials",
+      "link": "https://news.google.com/rss/articles/CBMipwFBVV95cUxOUTBOZmlOMWRqMFhKYUFWc0pEOHFpREd1Y2VhZEIyY2NzLThSbVRKU3ExMHQwYmhZSUFrVEN2YkZsY3ROZmlROWFTVDRzaXJZUUZuM01pMHlFZ3NsbWhwQVhVQVZ3NXplOVk3X1UxbG00Q25vellyMFAzNVhLVzBWUjJrSkpyaUh3NVBZWGFmeV9kNG5uYmQ5RE5LVGZVQmxsRVNtM0R6OA?oc=5",
+      "pub_date": "Wed, 25 Nov 2026 05:30:27 GMT",
+      "sentiment_score": -0.5,
+      "sentiment_label": "NEGATIF",
+      "keywords": [
+        "turun"
+      ]
+    },
+    {
+      "title": "Meski IHSG Merah di Sesi I, Tapi 10 Saham Ini Diborong Asing",
+      "source": "CNBC Indonesia",
+      "link": "https://news.google.com/rss/articles/CBMivgFBVV95cUxOc0lteldURkdpNDNISlVLS05Jd2pKT045ZDF2enBfR21CbGRXdXJGVEFBSFcxdXRHMmdTWGN2ZXc3NV9MMkJMdXpocWQydXNSc0V0Wjk0UUJtRXlvYlh0S3VxZ3NaN2lmMXRWQ1FFZTg1RDNOTGZpREY3UG1JdFQ2Q0dxUm4xZjFKMHRoZnd1dnNZdHBLcDNGaURFOU5wYVpCMFVZNjhocEFFcmdTNGlTaWVZa2Y3ZHNZclBsSnRn0gHDAUFVX3lxTE05bWxWcHVqWG9KNklzYTYtTWZLZnh4aXRJdm1xMGhyZERWcl9mbzdaSDR3RF91cHNDR1Z5U1lGZEZBdUg5bVNVdDk4U0xnalAtdk9qSC1felNRS1RNdkJoMDUyeTNmZlRYNFhBX3ZNb3V2OF9hV0F2THg0R2tTWVg3SmxyZnVOdGtUSHhheVphcW14X2FDMjlpQVVuWC03YW1Bc2t4S2hvMWl2VEJ3NjNXMGxKckV0M0F0NzN3MGxZQ0FSYw?oc=5",
+      "pub_date": "Wed, 25 Nov 2026 06:05:34 GMT",
+      "sentiment_score": -0.5,
+      "sentiment_label": "NEGATIF",
+      "keywords": [
+        "merah"
+      ]
+    },
+    {
       "title": "Saham BNI Jadi Termurah di Antara Bank BUMN",
       "source": "cwibc.co.id",
       "link": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE9OaDhJVkF6bTRQUkwwVjk1X0xKYTdvcXN1LWV2M1ZsVG1NM0E2czFEMmw5djA4N0Q3dlkwT3dqQXJ6ZENld1NPc2FpTXIzR1dOMW54eGJKVEtQOVU?oc=5",
@@ -40,17 +62,6 @@
       "keywords": []
     },
     {
-      "title": "Saham BBNI Diskon di Tengah Koreksi IHSG, Bagaimana Prospeknya?",
-      "source": "Kompas.com",
-      "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxPVXJXM2JYNXZvRC1vN0xIeW5nMXlSdXF2WnVLd2dEWjkzY3o0T2tiWjBVc1RrcmhpTkVkTHFET3pVOWNURWlRVURzQWozeWpORmhzS0Zhb01MaWkxUFBfNm5BUTlhOGZKT1pEeHhVczJ6ejIwOWtSNUV4LWRObmFrZkhCZjBZQnlCZUZvVG9GaFE1MG9qcGxhbGY2cThjMzFaZ1dTLUNpOFZjUnJmX2s2cWsxcw?oc=5",
-      "pub_date": "Sat, 21 Nov 2026 14:32:00 GMT",
-      "sentiment_score": -0.5,
-      "sentiment_label": "NEGATIF",
-      "keywords": [
-        "koreksi"
-      ]
-    },
-    {
       "title": "Dapat Peringkat idAAA, Simak Prospek Saham BBNI",
       "source": "kontan.co.id",
       "link": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxNeDYwVU1LMnR5MUIwa1BQeDRCdWMwSXVxWmtPa24tWlB1Qkg5cHk5Q3JqenM0Nmhjb2gtbDNwY0RFYXRTQ1JfZHIyRC1Cb2xpTGZnRXZESHM4SnZENG1xb3BhcC0wa0JlcGd4T25lZEEycGljT0ZKZlhDRXZxV3pqaUZDSEpBZUFw?oc=5",
@@ -58,18 +69,6 @@
       "sentiment_score": 0.0,
       "sentiment_label": "NETRAL",
       "keywords": []
-    },
-    {
-      "title": "BI Rate Naik, Kenapa Saham BBCA Menguat Saat Bank BUMN Melemah?",
-      "source": "Bareksa.com",
-      "link": "https://news.google.com/rss/articles/CBMirgFBVV95cUxPVTUtUWlpSEladllGTlllUDUwOVotYlJnN243U2ZhRmJPdENxNGltTUtyNmdBWk14bVVoZGxSSjhGVEJPUjdyd1lTWjlwdFJsdzZ6ODAwUGRBaDEtTHh0LVMwR25MZ1l3OXp5NW4yd2lzYS1KWHhBUVJTb19SN0NCOGtVbHdMdmhYaUtGbW5pOGZ3N2NSWm1UaUxsMXJWM0p1UUQ5cW9vNnBUUGVVNlE?oc=5",
-      "pub_date": "Thu, 19 Nov 2026 06:25:30 GMT",
-      "sentiment_score": 0.0,
-      "sentiment_label": "NETRAL",
-      "keywords": [
-        "menguat",
-        "melemah"
-      ]
     }
   ]
 }

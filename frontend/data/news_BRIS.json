@@ -1,15 +1,24 @@
 {
   "ticker": "BRIS",
   "overall_sentiment": "BULLISH / POSITIF",
-  "sentiment_score": 0.42,
+  "sentiment_score": 0.33,
   "status_color": "green",
   "distribution": {
-    "positif": 4,
+    "positif": 3,
     "negatif": 0,
-    "netral": 2,
+    "netral": 3,
     "total_news": 6
   },
   "articles": [
+    {
+      "title": "Rights Issue BRIS: Kapan, Berapa Harganya & Apakah Saham Terdilusi?",
+      "source": "Ajaib",
+      "link": "https://news.google.com/rss/articles/CBMinAFBVV95cUxObm9QNzI3ejlxaHVkUFZZX0JKWnNiQlZ1QXNGM2FseVJIcGxrY29XZzFmTTVmVXA2c2hfcnVPUGpoVWlHZWlhM21RTUZNQVhZdnFDZjBMbFpuQkdQem5CcVo1S3JCc29sRjVkRThhVzAxQml1eExraXRiQmRMdUI0R2VRNmZrWEJYaER0dXRjQ2N2aWFNWFJJeG44UUw?oc=5",
+      "pub_date": "Wed, 25 Nov 2026 03:14:55 GMT",
+      "sentiment_score": 0.0,
+      "sentiment_label": "NETRAL",
+      "keywords": []
+    },
     {
       "title": "Laba BRIS Naik 10%, Rekomendasi Buy Target Harga Rp2.450",
       "source": "Bareksa.com",
@@ -34,26 +43,6 @@
       ]
     },
     {
-      "title": "BSI Terbitkan 6,8 Miliar Saham untuk Perkuat Modal",
-      "source": "cwibc.co.id",
-      "link": "https://news.google.com/rss/articles/CBMieEFVX3lxTE1NY3FJaE5fZjJXNmVsX2xvOGV2S3Q1R21pZjZWQ0g0c2taclRvSFlaUE1iajJsVFotVVdIQjVMZHBNa3VnT3hqUGROU2xBMHRFRzVBV3paY1E2SElwVEx2eDA1ZVdvSS1qbHNBdmlnQ19taGpMYlBLZw?oc=5",
-      "pub_date": "Tue, 24 Nov 2026 12:55:58 GMT",
-      "sentiment_score": 0.0,
-      "sentiment_label": "NETRAL",
-      "keywords": []
-    },
-    {
-      "title": "Indo Premier Pertahankan Rekomendasi Buy Saham BSI (BRIS), Target Harga Rp 2.900",
-      "source": "kontan.co.id",
-      "link": "https://news.google.com/rss/articles/CBMisAFBVV95cUxPV3hsNTJnakRlMFJmWnZKSnVHbWdEdnBUZlo4NU9heDlvWVB2aDhIVm5sQkNETGdUSWpZSUpUeHpZbVdqYUNpd05nTjVualBJVTZsR0Y2bFZtUXR5Ykx0SllQNXZpX1BaOExEN1lQRGJwRFg0U1JPTHY1WnM2Y2oydkFzNU15N1R0SUw4VUNZd0lTcjZuNkZPaXJVczlQQ21FSTRadHkyTE9GbnBmbEZmUdIBqgFBVV95cUxONmw0UGZRLWhjaVVKRjlPeFV3T3RzSjFtLVRpSEhpb0ZQR3QxcERCcXJNbThQdEVVWkxwYTRNSHQ5V1I4QTI5ZEhvQkFwSFFocnFCX3lvQ3FtZ2p2R3lIV1FuODcwV2hiRzJBSzU5TGVZM3JQODlreXpISjFmWFJUUVpOd0t5Rzg5cEtqdkEtS09lVjU2c3hPcm81a3BUV2t6b080SnlOV21CQQ?oc=5",
-      "pub_date": "Tue, 24 Nov 2026 06:31:49 GMT",
-      "sentiment_score": 0.5,
-      "sentiment_label": "POSITIF",
-      "keywords": [
-        "buy"
-      ]
-    },
-    {
       "title": "Tekanan Global Naik, Cermati Saham BRIS, BULL dan PGEO Hari Ini",
       "source": "SWA.co.id",
       "link": "https://news.google.com/rss/articles/CBMilgFBVV95cUxQVHEwVl9ySlN0U2RCMmMxTTBndEQ4cVNPQ2RuRGZ3allzZnZLLUE0NDJXQnVselN3aktsNl9fRnY0LUJPekdCc3lzdlJTU3Rtdm5iZVRXamFzdE1kMWJMbDZRM2UxS3Z3VF9tOU96Y1BnUHhvNmd3aGJ1c3NoQktkcjFhYUlVNk0xbmRyaVV6NVhDSHJPZVE?oc=5",
@@ -63,9 +52,18 @@
       "keywords": []
     },
     {
+      "title": "Siasat Bank Digital Keluar dari Bayang-Bayang Kepemilikan Saham Terkonsentrasi Tinggi",
+      "source": "kontan.co.id",
+      "link": "https://news.google.com/rss/articles/CBMivAFBVV95cUxNTkpqaXdnV01DaFplX3hzTU83QXJLZGFwQmJFSXY3MEU0eGRBRW1nMjk1Nk5LVW00cEpBR29TWll1MFpCcVRFSmVVUzhDbmpXd21malZDX2tkb3hMV05SUllUeFVWWnpwY0o2VXZJdVBtN0NJc0lDZXFaN21xTmF5UnN1T0FoOGJNeklxeU5zMHFialJQX2dqT2JlaUVpUU81ZVlHeVUyTUFTRWNPU1VxQWptNFhLNFRSdE9JUdIBtgFBVV95cUxNVW1ud2dXMVVvVWF5ZXZiQ1VhVzh5Mkx1TmFGU1JOdjE5d3hYNGczN05FeDBQYWMtSHU2cDZYbjdpX3lwUS12RjdCLWNyd19wYjk2ZHo2Zzc5aXZjZ0VwWWg2R1R6MlpoTkQtQ0pLR2NaM2MwSlAwdlRtWEFVMTNQM2pMMzFJVGxxZDZwV0U3ZEJwSnZZZzV4cURqQ0Q2NzlmTmgtVDB2M04yV1FBN3Fudk5FVzdkZw?oc=5",
+      "pub_date": "Wed, 25 Nov 2026 09:21:26 GMT",
+      "sentiment_score": 0.0,
+      "sentiment_label": "NETRAL",
+      "keywords": []
+    },
+    {
       "title": "Terusir dari FTSE, Laba BRIS Tembus Rp6,12 Triliun Kuartal III",
       "source": "Emitennews.com",
-      "link": "https://news.google.com/rss/articles/CBMilwFBVV95cUxOY3l3QlVlNm1xOHlGSE5mQ2xvenZqLUF3aGdaOU5oUkdxSXVpRi1lbWkwV05KaXRHM2VKbnljMUxsUzNFYVA1Z0lHQ09CUkxFUmpCcFNQcW9WUG8zWS1hVlgzbjBtYk40R21IeXF3S3h3MlBlTmhDS0dieHhuQ0J4U2lUWGU0YjlTX1BJOFFYT3JFNXRTRUFB?oc=5",
+      "link": "https://news.google.com/rss/articles/CBMikgFBVV95cUxOai1EUC1Bb0NVMGFlaXZra285M3F3Q1lna2pqbEllRWNUR29oSlVFYlhTZWhOOU8zYUhNRWtISXlDN2VnTVNTdmFBX3dBOHBGWVR6TXNkaTBuVVc0YVZwN1BzQzFBcFUxR2pSdzA2ZzNsbk5jelgwY0xmeTNlaWpMbC1xNTVUbmxwbG42R0VJQjhpZw?oc=5",
       "pub_date": "Tue, 24 Nov 2026 03:29:00 GMT",
       "sentiment_score": 0.5,
       "sentiment_label": "POSITIF",

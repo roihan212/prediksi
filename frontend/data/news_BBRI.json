@@ -1,12 +1,12 @@
 {
   "ticker": "BBRI",
-  "overall_sentiment": "NETRAL / KONSOLIDASI",
-  "sentiment_score": 0.0,
-  "status_color": "yellow",
+  "overall_sentiment": "BEARISH / NEGATIF",
+  "sentiment_score": -0.38,
+  "status_color": "red",
   "distribution": {
-    "positif": 2,
-    "negatif": 1,
-    "netral": 3,
+    "positif": 1,
+    "negatif": 4,
+    "netral": 1,
     "total_news": 6
   },
   "articles": [
@@ -23,6 +23,39 @@
       ]
     },
     {
+      "title": "Asing belanja saham-saham ini saat IHSG turun 0,49% di sesi I",
+      "source": "IDNFinancials",
+      "link": "https://news.google.com/rss/articles/CBMipwFBVV95cUxOUTBOZmlOMWRqMFhKYUFWc0pEOHFpREd1Y2VhZEIyY2NzLThSbVRKU3ExMHQwYmhZSUFrVEN2YkZsY3ROZmlROWFTVDRzaXJZUUZuM01pMHlFZ3NsbWhwQVhVQVZ3NXplOVk3X1UxbG00Q25vellyMFAzNVhLVzBWUjJrSkpyaUh3NVBZWGFmeV9kNG5uYmQ5RE5LVGZVQmxsRVNtM0R6OA?oc=5",
+      "pub_date": "Wed, 25 Nov 2026 05:30:27 GMT",
+      "sentiment_score": -0.5,
+      "sentiment_label": "NEGATIF",
+      "keywords": [
+        "turun"
+      ]
+    },
+    {
+      "title": "Investor Asing Lepas Saham BBRI Senilai Rp 124,46 Miliar",
+      "source": "cwibc.co.id",
+      "link": "https://news.google.com/rss/articles/CBMiX0FVX3lxTFBZUTNZdGVMYnFHMmRkdjZLRXY2ampGbUhCTGdJdk5sSE43V1VkNWRTSWlsbmlMZmdBLWIySmwwSkNwdHMxMmJ3VFVYWFNIdkUtbGxGbW5OOHlFNjFqR3Jz?oc=5",
+      "pub_date": "Wed, 25 Nov 2026 07:27:08 GMT",
+      "sentiment_score": -0.75,
+      "sentiment_label": "NEGATIF",
+      "keywords": [
+        "lepas saham"
+      ]
+    },
+    {
+      "title": "Direktur Borong 1,1 Juta Saham BBRI di Harga Rp2.700",
+      "source": "CNBC Indonesia",
+      "link": "https://news.google.com/rss/articles/CBMisgFBVV95cUxQZW93UTFSOEhLdmJLcE9fdi1IbHJrRnJlYjNXVnl1Z19mVDlESzU2MGlyWWItYkREOElONlEwYXpiNHVCX21WNjdiQWtNdm9nenJmQ1ZiSHFKOGxWVWNIenR3Rm5xV3FoZHY2cS1rMUZGNHpqRGNYd1pzZDVQTGdMbnl3R1hMQnVMYUFrU0ZkaXN6UVRWNEo3SUZLeVAwak1iWlh5N0MyZGtMeE9GeEppTlZ30gG3AUFVX3lxTE40bDhpVUc1M0c0VEQ2TExPWGtwRGdzWjl6WkdPejJWTUtBamItQlliUFhFdS15ZzhCcktMY0NOM0pubVFMR3ZlVHJ2YnhaOC1uZGNFSzdYYWFPS2pybmtHa2VxUTctWHZqSXM1TG5ZQzg2c05QNnZDUy1hMW5GYW5zOTQycW5jbzBwRVdQc1hBWUdNUndURmZBdTNaUEhtRDhwN2FMM0dwWFV3X2o0VWk3dGZ5ZzJjMA?oc=5",
+      "pub_date": "Mon, 19 Oct 2026 07:00:00 GMT",
+      "sentiment_score": 0.5,
+      "sentiment_label": "POSITIF",
+      "keywords": [
+        "borong"
+      ]
+    },
+    {
       "title": "Simak Rekomendasi Teknikal Saham BBRI, INDF, dan PWON untuk Perdagangan Rabu (25/11)",
       "source": "kontan.co.id",
       "link": "https://news.google.com/rss/articles/CBMitgFBVV95cUxNbUMtamdTTUY4OVBuanNCcVd4c0xQVExfRzhnQ1I3OWpxSHltV0ZuM1RxeEh0Z2VKQkNxRmo3OWpyQmszM00wbnpLemhOUm0tTFBpMHk0S3pzUXIxQUJaNjRuMHZ3UHJwLUttanE3eWtHdG52bEZNNVVHbWY2R29MbUdTNVlSWDVJMm5SdkRieldpWFJYUXFKY3AyN2dWT3dKV3gwQldYZGp3VFdkQU1Kbm9fWnR0Z9IBrgFBVV95cUxOSUIzR3V6NTJEcEY4aFdwV1hVekwybnNUbmRVRDBPUDlsWXFyMXh3OVRFTFROSnByRERSS1JZSFoxNWRXdHNvQm4tS09mSkJnVFBGRjFWUFliZmZoX1FRMXUtbW1HV1EzdndVczRZLTlVRkZ4cXlyMGVkcmh4QzFGeG83WGk0WjJKVENvWlM1Y0dWalFxX1lJMFBKbEttQzh2ZGRZNDlKbFFtRGVrR2c?oc=5",
@@ -32,44 +65,15 @@
       "keywords": []
     },
     {
-      "title": "Asing beli saham-saham ini saat IHSG naik 0,25% di sesi I",
-      "source": "IDNFinancials",
-      "link": "https://news.google.com/rss/articles/CBMiogFBVV95cUxNX05STTJmM3hDOVUtc3hEUFBEZzZRTzNOZkozNWc0dUhUcUVNRW1CdW0yRXhPVWJiOGR3cWtHQVNXWkNLRXhwNlNqdEpqQWpndkJveFZwT3lTenVvQ2x5R1pQUlJWVnBUM2lNVkhkcHc4Wmdwc18yLUFQUm1MZFFseE1HZkk5SlZSeFEtaXNveDZhaUdXS0lJVU1lVVVCY0k0M0E?oc=5",
-      "pub_date": "Tue, 24 Nov 2026 06:10:00 GMT",
-      "sentiment_score": 0.0,
-      "sentiment_label": "NETRAL",
-      "keywords": []
-    },
-    {
-      "title": "Saham BBRI Menguat 0,3 Persen ke Rp 3.080 di Sesi I",
+      "title": "Asing Jual Saham Rp336,2 Miliar, BBRI dan TLKM Tertekan",
       "source": "Demokratis.co.id",
-      "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTE9uUDRiX216bGlQcHNMV3VzUmpmZUJMc0gxRHcyRkotUXFTckpVM1ZoSlJ5TE01RnRTaVZHTHg1Nm1DMS1wa2NrcmJ5dlZ6clpwakxwRUpxU1duY1VDQnMwM0FWUDZzU1ZIb0xNYQ?oc=5",
-      "pub_date": "Tue, 24 Nov 2026 06:08:30 GMT",
-      "sentiment_score": 0.5,
-      "sentiment_label": "POSITIF",
+      "link": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE1OcWpSX3pneGlPa0dwcWdIY3Mtbi13RFh5ZzBUY2w1MVktNnQzd215T21ENFhRb190bld3TnhhMnFmWWFDZzBWYzk5cFdwWmJvX1FsRW9aNlNhV0NqSDRINg?oc=5",
+      "pub_date": "Wed, 25 Nov 2026 13:08:35 GMT",
+      "sentiment_score": -0.5,
+      "sentiment_label": "NEGATIF",
       "keywords": [
-        "menguat"
+        "tertekan"
       ]
-    },
-    {
-      "title": "Asing Borong Saham BBCA Rp174,55 Miliar, Harga Naik 2,25% di Tengah Penjualan Saham Bank BUMN",
-      "source": "Ajaib",
-      "link": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxPV19SbDlVeV93ZXg0SnBlUHp1SXFOaFM2bmlDSE1Ub0dOaHJFSEU0dUxqcnp4Y0NLajE2dHM1d2s0MkFnSThBYWVDVXdXMnlVLVJNNmkyem9SUXFVOXUzQUU5djJobGhUeWdIZmRydlZmdGxoRnpKdUZRMV9rQVFwQlJ4ZUcyQUY3dG9ObzRkOWRrWUczenJ6aDdEZ0xTbTRpamhod1cwcGpGMmhiOVVCelR6N1ZHamNtX3daRUN3UFE?oc=5",
-      "pub_date": "Tue, 24 Nov 2026 05:15:25 GMT",
-      "sentiment_score": 0.5,
-      "sentiment_label": "POSITIF",
-      "keywords": [
-        "borong"
-      ]
-    },
-    {
-      "title": "Pemegang Saham BBRI Bertambah 38 Ribu, Free Float Tetap Jumbo 46,28% per Maret 2026",
-      "source": "Bareksa.com",
-      "link": "https://news.google.com/rss/articles/CBMixwFBVV95cUxOSGhvb2dxYkFaMWR0VmVSMTREdGtaTHJEV3FEY09NVUV2SW41NmhxT1FhZnJ5RjBfbXZmaHJwSzh4NGRva3NaeGF5dm03Q3FWVFZIanFwUndVa3M3UmpnSHRSTGE4U2pVWDlHbVB2Z2FpdEI5X2hfS0F2ZHFMN09vVXBlbXgwUmdVUnZJQTBoSVFLQ1hsWkZMZGFIZ0FrYXh0Y05lU1pWZGV3SGxBRXpyYnVHbHN1QkhyZVR5aTFISGkyRGRwc053?oc=5",
-      "pub_date": "Mon, 20 Apr 2026 07:00:00 GMT",
-      "sentiment_score": 0.0,
-      "sentiment_label": "NETRAL",
-      "keywords": []
     }
   ]
 }

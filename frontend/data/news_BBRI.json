@@ -1,7 +1,7 @@
 {
   "ticker": "BBRI",
   "overall_sentiment": "BEARISH / NEGATIF",
-  "sentiment_score": -0.38,
+  "sentiment_score": -0.33,
   "status_color": "red",
   "distribution": {
     "positif": 1,
@@ -11,37 +11,15 @@
   },
   "articles": [
     {
-      "title": "Asing Lepas Saham BBRI Rp187,69 Miliar, Harga Turun Tipis ke Rp3.070",
+      "title": "Asing Lepas BBRI Rp217,9 Miliar, Net Sell Terbesar Saat IHSG Turun 0,84%",
       "source": "Ajaib",
-      "link": "https://news.google.com/rss/articles/CBMiogFBVV95cUxOMFlUeUVuZTNVOTJMdmVkaDNmSnpkckJJZ2F6RFA5LUJVWUVJSmRfYjY1Q1BYXzhtR1VBUzFaVmxFZmFWdmdwYVVJaWpoTlBZNzN1aFcyQ3RrSS16TW9DdmJvUlF0aEtYQmFNTk93WmxqcGZQcnV1UV9CSG5rS3F5eG9lNk1rMWdjLS0xdHBNbU1BbGk2aGZtckRVNERZRWN6Y1E?oc=5",
-      "pub_date": "Tue, 24 Nov 2026 04:50:21 GMT",
+      "link": "https://news.google.com/rss/articles/CBMivwFBVV95cUxPdVI5NFA5ZVJ5Y0xnN0l2VnJRZmUzY3BFMmxFVWQwMWdZZTNwWG1DNnN1all5TXd1eV9DdEZjU1o1Z1hObUtnZzB2VXplMXhDekJnTXgxMl9kVjlmWnpENVFpeXF1VENRM2QzZFdPLVJTUFQ0WU5IMjR3M1Brdll1d1N6THlQeHNwWUF4eDBFMHgtdkZYLVdtamxQWW1XNUdXa2NmQkdXLXhPZEU2MkFZZXJBc05qcExiNzZmMDNvNA?oc=5",
+      "pub_date": "Thu, 26 Nov 2026 08:09:43 GMT",
       "sentiment_score": -1.0,
       "sentiment_label": "NEGATIF",
       "keywords": [
-        "lepas saham",
+        "sell",
         "turun"
-      ]
-    },
-    {
-      "title": "Asing belanja saham-saham ini saat IHSG turun 0,49% di sesi I",
-      "source": "IDNFinancials",
-      "link": "https://news.google.com/rss/articles/CBMipwFBVV95cUxOUTBOZmlOMWRqMFhKYUFWc0pEOHFpREd1Y2VhZEIyY2NzLThSbVRKU3ExMHQwYmhZSUFrVEN2YkZsY3ROZmlROWFTVDRzaXJZUUZuM01pMHlFZ3NsbWhwQVhVQVZ3NXplOVk3X1UxbG00Q25vellyMFAzNVhLVzBWUjJrSkpyaUh3NVBZWGFmeV9kNG5uYmQ5RE5LVGZVQmxsRVNtM0R6OA?oc=5",
-      "pub_date": "Wed, 25 Nov 2026 05:30:27 GMT",
-      "sentiment_score": -0.5,
-      "sentiment_label": "NEGATIF",
-      "keywords": [
-        "turun"
-      ]
-    },
-    {
-      "title": "Investor Asing Lepas Saham BBRI Senilai Rp 124,46 Miliar",
-      "source": "cwibc.co.id",
-      "link": "https://news.google.com/rss/articles/CBMiX0FVX3lxTFBZUTNZdGVMYnFHMmRkdjZLRXY2ampGbUhCTGdJdk5sSE43V1VkNWRTSWlsbmlMZmdBLWIySmwwSkNwdHMxMmJ3VFVYWFNIdkUtbGxGbW5OOHlFNjFqR3Jz?oc=5",
-      "pub_date": "Wed, 25 Nov 2026 07:27:08 GMT",
-      "sentiment_score": -0.75,
-      "sentiment_label": "NEGATIF",
-      "keywords": [
-        "lepas saham"
       ]
     },
     {
@@ -56,6 +34,39 @@
       ]
     },
     {
+      "title": "IHSG Diproyeksikan Melemah, Sentimen Negatif Global Tekan Pasar Saham Indonesia",
+      "source": "TopBusiness.id",
+      "link": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxOdC0xWGJ1V00xX3lPMzVmNmo2YlRJLW1SSUJrNjVKZjlaRmJ0MHFGVDExSl9obmNVUkF3OHFyY1AwMXRJc19JSEtOMXpXLVNWU3FrazVLbERVQlU1bmlac1pYODBJeUFKRnk1ZjlJaHRlU0N5VDZjbExlbGZtd2pqN21qVlJoSS1EWEtGQlpPb1YxLWFJUG5FdE1VRVpBSVJYXzBjalpCdWw1aHNEcmwtM0tDQVBNT2pJ?oc=5",
+      "pub_date": "Thu, 26 Nov 2026 01:17:00 GMT",
+      "sentiment_score": -0.5,
+      "sentiment_label": "NEGATIF",
+      "keywords": [
+        "melemah"
+      ]
+    },
+    {
+      "title": "Asing belanja saham-saham ini saat IHSG turun 0,49% di sesi I",
+      "source": "IDNFinancials",
+      "link": "https://news.google.com/rss/articles/CBMipwFBVV95cUxOUTBOZmlOMWRqMFhKYUFWc0pEOHFpREd1Y2VhZEIyY2NzLThSbVRKU3ExMHQwYmhZSUFrVEN2YkZsY3ROZmlROWFTVDRzaXJZUUZuM01pMHlFZ3NsbWhwQVhVQVZ3NXplOVk3X1UxbG00Q25vellyMFAzNVhLVzBWUjJrSkpyaUh3NVBZWGFmeV9kNG5uYmQ5RE5LVGZVQmxsRVNtM0R6OA?oc=5",
+      "pub_date": "Wed, 25 Nov 2026 05:30:27 GMT",
+      "sentiment_score": -0.5,
+      "sentiment_label": "NEGATIF",
+      "keywords": [
+        "turun"
+      ]
+    },
+    {
+      "title": "Posisi Investor Asing Kala IHSG Turun",
+      "source": "Bloomberg Technoz",
+      "link": "https://news.google.com/rss/articles/CBMikwFBVV95cUxPWWpMVjE0azJmM0h3clFuTkdBNURWYzhCV0k5LTNmSjJmbjdlNm1teFA1YjJLLVJEMGw0Z244aWdDNDVldHVlNFE4cXZVTUxzTC1sYmwzVmI4MVNuRUQxUW43NDhQY2M4cXZoWXhWQTd3ZEM0Rnp6SUQza2U0YUJfTVlHY1VZTUtGbG1WeXppWXBNd1k?oc=5",
+      "pub_date": "Thu, 26 Nov 2026 00:00:00 GMT",
+      "sentiment_score": -0.5,
+      "sentiment_label": "NEGATIF",
+      "keywords": [
+        "turun"
+      ]
+    },
+    {
       "title": "Simak Rekomendasi Teknikal Saham BBRI, INDF, dan PWON untuk Perdagangan Rabu (25/11)",
       "source": "kontan.co.id",
       "link": "https://news.google.com/rss/articles/CBMitgFBVV95cUxNbUMtamdTTUY4OVBuanNCcVd4c0xQVExfRzhnQ1I3OWpxSHltV0ZuM1RxeEh0Z2VKQkNxRmo3OWpyQmszM00wbnpLemhOUm0tTFBpMHk0S3pzUXIxQUJaNjRuMHZ3UHJwLUttanE3eWtHdG52bEZNNVVHbWY2R29MbUdTNVlSWDVJMm5SdkRieldpWFJYUXFKY3AyN2dWT3dKV3gwQldYZGp3VFdkQU1Kbm9fWnR0Z9IBrgFBVV95cUxOSUIzR3V6NTJEcEY4aFdwV1hVekwybnNUbmRVRDBPUDlsWXFyMXh3OVRFTFROSnByRERSS1JZSFoxNWRXdHNvQm4tS09mSkJnVFBGRjFWUFliZmZoX1FRMXUtbW1HV1EzdndVczRZLTlVRkZ4cXlyMGVkcmh4QzFGeG83WGk0WjJKVENvWlM1Y0dWalFxX1lJMFBKbEttQzh2ZGRZNDlKbFFtRGVrR2c?oc=5",
@@ -63,17 +74,6 @@
       "sentiment_score": 0.0,
       "sentiment_label": "NETRAL",
       "keywords": []
-    },
-    {
-      "title": "Asing Jual Saham Rp336,2 Miliar, BBRI dan TLKM Tertekan",
-      "source": "Demokratis.co.id",
-      "link": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE1OcWpSX3pneGlPa0dwcWdIY3Mtbi13RFh5ZzBUY2w1MVktNnQzd215T21ENFhRb190bld3TnhhMnFmWWFDZzBWYzk5cFdwWmJvX1FsRW9aNlNhV0NqSDRINg?oc=5",
-      "pub_date": "Wed, 25 Nov 2026 13:08:35 GMT",
-      "sentiment_score": -0.5,
-      "sentiment_label": "NEGATIF",
-      "keywords": [
-        "tertekan"
-      ]
     }
   ]
 }

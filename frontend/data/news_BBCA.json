@@ -1,26 +1,15 @@
 {
   "ticker": "BBCA",
   "overall_sentiment": "BULLISH / POSITIF",
-  "sentiment_score": 0.33,
+  "sentiment_score": 0.17,
   "status_color": "green",
   "distribution": {
-    "positif": 3,
+    "positif": 2,
     "negatif": 0,
-    "netral": 3,
+    "netral": 4,
     "total_news": 6
   },
   "articles": [
-    {
-      "title": "Asing Borong Saham BBCA Rp409,23 Miliar, Harga Naik 2,20% ke Rp5.800",
-      "source": "Ajaib",
-      "link": "https://news.google.com/rss/articles/CBMinwFBVV95cUxQTm10UTdxZzBiQjkxOEJsb1hmZkJjc3AwTm9HTWVuMXpVZXVweThUQ2JfRzl6Z1hlaFFUd0RUeXBzZ2l5ajd3SVpSWk42ZlA3OWM3S1NMbEM0U0xQcGNQbXEyNzVCQ0pzTVFUTzV0dUo1YWhKYW14OFB3c0hVOWJTU0ZSQU0teHpsaVhTQmVZS2dmRk1OYUVIcllZMHhpVXM?oc=5",
-      "pub_date": "Wed, 25 Nov 2026 05:05:06 GMT",
-      "sentiment_score": 0.5,
-      "sentiment_label": "POSITIF",
-      "keywords": [
-        "borong"
-      ]
-    },
     {
       "title": "BCA Umumkan Pembagian Dividen Interim dengan Akumulasi Tahun 2026 Rp80 per Saham, Naik 45,5% YoY",
       "source": "BCA.co.id",
@@ -30,6 +19,26 @@
       "sentiment_label": "POSITIF",
       "keywords": [
         "dividen"
+      ]
+    },
+    {
+      "title": "IHSG naik 0,68% di sesi I, asing akumulasi saham-saham ini",
+      "source": "IDNFinancials",
+      "link": "https://news.google.com/rss/articles/CBMiogFBVV95cUxQVWVrNnhqVXctUVM4VDhvQnB2UXlEaEFGRnNMYTNDWHBMcTZZMFJtcWdfMkUtYnZPaGh5VjlCdmtTWFplRFp1OHhrbHpNQXd4RDZoTUhPYVYwRHBULVhVOXlQWFJQNjRaVFQ1dE9ZMDJNcnJNblRzWVZJVDVhQnlsQ0RxTTlWSVBFaDRVMnpPcG1iZ2RGNkhuWFUtMnhqLUlPVlE?oc=5",
+      "pub_date": "Thu, 26 Nov 2026 06:00:00 GMT",
+      "sentiment_score": 0.0,
+      "sentiment_label": "NETRAL",
+      "keywords": []
+    },
+    {
+      "title": "Asing Borong Saham BBCA Rp409,23 Miliar, Harga Naik 2,20% ke Rp5.800",
+      "source": "Ajaib",
+      "link": "https://news.google.com/rss/articles/CBMinwFBVV95cUxQTm10UTdxZzBiQjkxOEJsb1hmZkJjc3AwTm9HTWVuMXpVZXVweThUQ2JfRzl6Z1hlaFFUd0RUeXBzZ2l5ajd3SVpSWk42ZlA3OWM3S1NMbEM0U0xQcGNQbXEyNzVCQ0pzTVFUTzV0dUo1YWhKYW14OFB3c0hVOWJTU0ZSQU0teHpsaVhTQmVZS2dmRk1OYUVIcllZMHhpVXM?oc=5",
+      "pub_date": "Wed, 25 Nov 2026 05:05:06 GMT",
+      "sentiment_score": 0.5,
+      "sentiment_label": "POSITIF",
+      "keywords": [
+        "borong"
       ]
     },
     {
@@ -51,25 +60,13 @@
       "keywords": []
     },
     {
-      "title": "Abaikan bantahan MSCI, saham bank topang IHSG naik 0,49%",
-      "source": "IDNFinancials",
-      "link": "https://news.google.com/rss/articles/CBMinwFBVV95cUxPVDZad2xzSHM5UmdZSk9SdU4tcjA0VHpNSDFKTnBac0Y0YnFNdVpKM0xIc2otYWJOS1QyVUZXbV9YM254MXVEWTh5WXg1cktCRDVuN1hBSFFMTXhudnowSjN3bE1xVVNoTnhqOVg1N2c4T3Joa2hvYTRsc0VqSHl0QTJORVhwTXU4S0hXWUJPdE5STEp6ZXE3OU5TOXpmQ1k?oc=5",
-      "pub_date": "Tue, 24 Nov 2026 09:50:00 GMT",
+      "title": "UOB Kay Hian Pangkas Target Harga Saham BBCA",
+      "source": "cwibc.co.id",
+      "link": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE1LbVNQUEFSRGxNX2lJSFZ1cjRyRjA5QnA2WTlzVV9CX0NUOWVEUU9tVEwyR3dDeXdXNzhSYUVGYmFITlVfQmwzRXd0aVhycXlzQUx5b2F6dDVjUnIwWFFZ?oc=5",
+      "pub_date": "Thu, 26 Nov 2026 03:38:09 GMT",
       "sentiment_score": 0.0,
       "sentiment_label": "NETRAL",
       "keywords": []
-    },
-    {
-      "title": "Investor Asing Borong Saham Big Banks, Net Buy Ratusan Miliar",
-      "source": "Bloomberg Technoz",
-      "link": "https://news.google.com/rss/articles/CBMisgFBVV95cUxQRHRhNUd2TnBCdVN2Y01VajByakdQSEJBNWRCd3NVaFBGZDllX1FIWGNVZDN5cUJjS2lFcU5KM3JGSTN4N0lnX2gzTkZTdVBmdkRfSUF6b3l2dV9VNXB6RU1OOEh0WXFvU3dWLUM0TVRrX1hQd2tmdnBnVF9Pb3Jsa0VLaXFYLVJSbnVEQkx5QjJWVGFNV2FCeXFwS2JDOVF3WmJ1ZTFvUDlKU3p4bE93ekNB?oc=5",
-      "pub_date": "Wed, 25 Nov 2026 01:40:13 GMT",
-      "sentiment_score": 1.0,
-      "sentiment_label": "POSITIF",
-      "keywords": [
-        "borong",
-        "buy"
-      ]
     }
   ]
 }

@@ -1,29 +1,44 @@
 {
   "ticker": "BMRI",
   "overall_sentiment": "BULLISH / POSITIF",
-  "sentiment_score": 0.25,
+  "sentiment_score": 0.33,
   "status_color": "green",
   "distribution": {
-    "positif": 2,
+    "positif": 3,
     "negatif": 0,
-    "netral": 4,
+    "netral": 3,
     "total_news": 6
   },
   "articles": [
     {
-      "title": "Bukit Uluwatu Villa (BUVA) Lunasi Utang Bank Mandiri Rp420,39 Miliar Lebih Cepat dari Dana Rights Issue",
+      "title": "Dividen BMRI 2026: Jadwal & Besaran",
       "source": "Ajaib",
-      "link": "https://news.google.com/rss/articles/CBMizwFBVV95cUxPQ211SFZtbWJ2WFpvLV9vd0pxaFVVUWdSZVZuT1BrSElQT2V3c3JTT29INTF2RG5nd0c3V2w1Ml82MTQ1Q0FWX2MwNTZlaXNXdDE4YjNaTFJzeUU0dXl2c2VxVlVmd3BBYWlOc1p5VE4xcXl2VmxEU1JYZHNZTVZwWGNiUEJscGV6dllaQUhaNzRNY2VLallCVENDRE1uYWFXLTlpeXB1cWNtUFpmb3dCZktESzI1QlNuQ29Kc0NUeGhOblp2WnN4NkUwenlNM0E?oc=5",
-      "pub_date": "Wed, 25 Nov 2026 08:10:34 GMT",
-      "sentiment_score": 0.0,
-      "sentiment_label": "NETRAL",
-      "keywords": []
+      "link": "https://news.google.com/rss/articles/CBMihAFBVV95cUxQQTZ3THdFdXF3ZWd6cHU2SE1tR0V5WEIxTWN1UmNMZFlkRW9lYjJGcFRQdDBoQnVUVDJsOTFHOE4xVzUwZVFsNWpGdXI2eER3MzVZOFZ2QlhCcm9OVldzc1A4cDhtaUdndy03MklnNjZPdlZTTGJqNEZieEtaa3FvR180UkE?oc=5",
+      "pub_date": "Tue, 24 Nov 2026 09:41:12 GMT",
+      "sentiment_score": 0.5,
+      "sentiment_label": "POSITIF",
+      "keywords": [
+        "dividen"
+      ]
     },
     {
-      "title": "Bukit Uluwatu (BUVA) Lunasi Kredit Rp 500 Miliar dari Bank Mandiri",
+      "title": "Laba Bank Mandiri Tumbuh 19,6%, Maybank Sekuritas Rekomendasikan Buy Saham BMRI",
       "source": "TradingView",
-      "link": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE1HZEV3S2hWcDRGcGtLMU1JM2JjcGlRN1ZWMXBCb1VWQVMyZmE5dE92LThqcmJKLUd1enlQSEUzejlTNTRwUmZUNXU2TXZUaEVZbl9nMmphcjdhdGxUMXI3UG96cVdBQQ?oc=5",
-      "pub_date": "Wed, 25 Nov 2026 04:50:00 GMT",
+      "link": "https://news.google.com/rss/articles/CBMif0FVX3lxTE93SWRiOGxQWGpuTUdBLVZtdHJGZWl4eE1KMTVVUS1nV0lrSE9zcUVxUUY3bXJoRUhGWW5LTVdVNERCdTBrbWs2V0NYRDRvZE50SzUySVhqbHdnT2ZhME9YemZlN3kwSTNXUGE4ZUhNc2tvTV9QUDkyMnktSFlWYkU?oc=5",
+      "pub_date": "Sat, 21 Nov 2026 01:15:00 GMT",
+      "sentiment_score": 1.0,
+      "sentiment_label": "POSITIF",
+      "keywords": [
+        "laba",
+        "tumbuh",
+        "buy"
+      ]
+    },
+    {
+      "title": "Bank Mandiri Buka Suara soal Gadai Saham Perusahaan Haji Isam",
+      "source": "beritanasionalupdate.com",
+      "link": "https://news.google.com/rss/articles/CBMisgFBVV95cUxPaDR1QVRLRFVLYlBUWTVmSVRwY2x6VkQ3T215N1UycE9rUHRlWTlneGE1amoydmFUUWpzeFhyYTBpbEZCdTkwYkp0dHhycllBNVFjUnFKNzdPcmVfV3FHZlJpTmY1QktXTExVSjhIUDM2Z3lYbktWcXlIWjV4VjI2YTZ5cUtsUHRRdk1xa0R0RDNHRWRvODJoMGR5bFUyV3h4TDJ4QWZZdjBpWkFZWkdGUFhn?oc=5",
+      "pub_date": "Mon, 19 Oct 2026 07:00:00 GMT",
       "sentiment_score": 0.0,
       "sentiment_label": "NETRAL",
       "keywords": []
@@ -37,19 +52,6 @@
       "sentiment_label": "POSITIF",
       "keywords": [
         "menguat"
-      ]
-    },
-    {
-      "title": "Laba Bank Mandiri Tumbuh 19,6%, Maybank Sekuritas Rekomendasikan Buy Saham BMRI",
-      "source": "kontan.co.id",
-      "link": "https://news.google.com/rss/articles/CBMisAFBVV95cUxNcXBlVUJUVW1TVGR3OXZrWWhobzMxLW5rNUZHd3ZKQm1mWmRrc2gyN1JPNzNEbDJIVElDZGRTZnc5cXNJVDJ5TzVOYXlKZllwV0czLTQ4VjRfMG5mWDFrZ0JVal9tc3ladUxIcTlvZGVsMGNOeUtJV2J6d2xwdW9DbUZTbkdybUJZV1BSMG5lc0xPZUJzaTU3ejJpVW1EYy1fOVJPNFRXS3ZZcFBRZUR1M9IBqgFBVV95cUxNcnB6RHVwRFdSOXVFMUxyNE9oalJrcUdOSDJFQ0RCTjgzeWltdWNpQi1LaUFEOFlSek5DWl9QYV9UUkNxdmN0Y2YzV2RzVHNLXzJsamV1UUVhSlFsR3RnSXNMS3FFaDhCS3VTaVN5RWFGN2hXMWRHYzI0OU04VzdBOU84WFdEaWlQMXAxME5oeGk4cktrdWdHRHBsS1Bfa0R5LUQ3Z0JQcEtGZw?oc=5",
-      "pub_date": "Sat, 21 Nov 2026 01:15:22 GMT",
-      "sentiment_score": 1.0,
-      "sentiment_label": "POSITIF",
-      "keywords": [
-        "laba",
-        "tumbuh",
-        "buy"
       ]
     },
     {

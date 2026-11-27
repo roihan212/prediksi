@@ -1,15 +1,26 @@
 {
   "ticker": "BBNI",
-  "overall_sentiment": "BULLISH / POSITIF",
-  "sentiment_score": 0.17,
-  "status_color": "green",
+  "overall_sentiment": "BEARISH / NEGATIF",
+  "sentiment_score": -0.25,
+  "status_color": "red",
   "distribution": {
-    "positif": 2,
-    "negatif": 1,
-    "netral": 3,
+    "positif": 1,
+    "negatif": 4,
+    "netral": 1,
     "total_news": 6
   },
   "articles": [
+    {
+      "title": "Analis Jagokan Saham BMRI di Tengah Tantangan Likuiditas Bank Pelat Merah pada 2027",
+      "source": "KONTAN",
+      "link": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxPMWdqcFg5SF9zVEhUeXBnbDlMWnlXdnJGdFFEZ0NRdlRla2M2RThJVXJUWG1HSGpBOGdvdUhKQnBxaU5rRXY5ZGtSdmJKLVZORWhjOFJJOGZWZE5Pa3AyZ3NtQ0Qwa0hLVWVyTTJUMDM5WDlEWFZDZ0F6eXp5NDVlemhSSENiaFNzRjEwMXpDMmlwVmVVTWdzM1hTSUNpaUJfTTB1dnVtSzVzYlFFOGFGT3BDM3BXTzVi?oc=5",
+      "pub_date": "Fri, 27 Nov 2026 06:15:24 GMT",
+      "sentiment_score": -0.5,
+      "sentiment_label": "NEGATIF",
+      "keywords": [
+        "merah"
+      ]
+    },
     {
       "title": "Asing Borong Saham BBCA Rp174,55 Miliar, Harga Naik 2,25% di Tengah Penjualan Saham Bank BUMN",
       "source": "Ajaib",
@@ -22,53 +33,45 @@
       ]
     },
     {
-      "title": "Kantongi Peringkat idAAA, Saham BNI Tawarkan Valuasi Paling Atraktif di Tengah Tekanan IHSG",
-      "source": "Stabilitas.id",
-      "link": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxQX214TWs3QWpVVkpyNms5VXZ0RWlmQlI3RlJQSlBkcDZOMnFDeDJIdWx4cE9zSDBuWDdYeWJraU50SlZXeDFJWnU5bDh4a0pkRE05Q0Q5QllUa2FObUUyX1U2QUpzN2VweXVRU0Y4UGU5ZURnRmJQWGdpQVV5VUo4dmdscXZaVFR4Ty1NMlY5bTJDVTNsYXpvdWItYXJEck1RNW9EdmZST0dudGNGbHhpcDQwVTVJcDFI?oc=5",
-      "pub_date": "Sat, 21 Nov 2026 07:33:36 GMT",
-      "sentiment_score": 0.0,
-      "sentiment_label": "NETRAL",
-      "keywords": []
-    },
-    {
-      "title": "Saham BNI Jadi Termurah di Antara Bank BUMN",
-      "source": "cwibc.co.id",
-      "link": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE9OaDhJVkF6bTRQUkwwVjk1X0xKYTdvcXN1LWV2M1ZsVG1NM0E2czFEMmw5djA4N0Q3dlkwT3dqQXJ6ZENld1NPc2FpTXIzR1dOMW54eGJKVEtQOVU?oc=5",
-      "pub_date": "Sat, 21 Nov 2026 14:42:54 GMT",
-      "sentiment_score": 0.0,
-      "sentiment_label": "NETRAL",
-      "keywords": []
-    },
-    {
-      "title": "Dapat Peringkat idAAA, Simak Prospek Saham BBNI",
-      "source": "kontan.co.id",
-      "link": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxNeDYwVU1LMnR5MUIwa1BQeDRCdWMwSXVxWmtPa24tWlB1Qkg5cHk5Q3JqenM0Nmhjb2gtbDNwY0RFYXRTQ1JfZHIyRC1Cb2xpTGZnRXZESHM4SnZENG1xb3BhcC0wa0JlcGd4T25lZEEycGljT0ZKZlhDRXZxV3pqaUZDSEpBZUFw?oc=5",
-      "pub_date": "Sat, 21 Nov 2026 12:37:15 GMT",
-      "sentiment_score": 0.0,
-      "sentiment_label": "NETRAL",
-      "keywords": []
-    },
-    {
-      "title": "Saham BBNI Diskon di Tengah Koreksi IHSG, Bagaimana Prospeknya?",
-      "source": "Kompas.com",
-      "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxPVXJXM2JYNXZvRC1vN0xIeW5nMXlSdXF2WnVLd2dEWjkzY3o0T2tiWjBVc1RrcmhpTkVkTHFET3pVOWNURWlRVURzQWozeWpORmhzS0Zhb01MaWkxUFBfNm5BUTlhOGZKT1pEeHhVczJ6ejIwOWtSNUV4LWRObmFrZkhCZjBZQnlCZUZvVG9GaFE1MG9qcGxhbGY2cThjMzFaZ1dTLUNpOFZjUnJmX2s2cWsxcw?oc=5",
-      "pub_date": "Sat, 21 Nov 2026 14:32:00 GMT",
+      "title": "Asing belanja saham-saham ini saat IHSG turun 0,49% di sesi I",
+      "source": "IDNFinancials",
+      "link": "https://news.google.com/rss/articles/CBMipwFBVV95cUxOUTBOZmlOMWRqMFhKYUFWc0pEOHFpREd1Y2VhZEIyY2NzLThSbVRKU3ExMHQwYmhZSUFrVEN2YkZsY3ROZmlROWFTVDRzaXJZUUZuM01pMHlFZ3NsbWhwQVhVQVZ3NXplOVk3X1UxbG00Q25vellyMFAzNVhLVzBWUjJrSkpyaUh3NVBZWGFmeV9kNG5uYmQ5RE5LVGZVQmxsRVNtM0R6OA?oc=5",
+      "pub_date": "Wed, 25 Nov 2026 05:30:27 GMT",
       "sentiment_score": -0.5,
       "sentiment_label": "NEGATIF",
       "keywords": [
-        "koreksi"
+        "turun"
       ]
     },
     {
-      "title": "Laba Bersih BBNI Q3 2026 Naik 7%, Rekomendasi Tetap Buy, Target Harga Saham Rp4.650",
-      "source": "Bareksa.com",
-      "link": "https://news.google.com/rss/articles/CBMixgFBVV95cUxQaWZMVlVraFlPY1VWRHRibkxReDBfOVpMcFEtOWVFbzNRenhGZlNuVXZ4enVackd6VXc3Qm1WZjktcG9hUWNzR1dyb1BLN21uSmlmYzcyVGdURUNwY3RCUkhUNk5fWHVpdHh0TTR1emlmWDZDMzI0aEd2dHI5ZGUtWXJxY3hfQ1BoS0liZzFKZkVhODFPMnBKTnotbFcycTcySFI4NmNfTDZWX3NVRmVoWWpqY2dQemhfSF9VbWlHX0tKY3Z6a2c?oc=5",
-      "pub_date": "Tue, 27 Oct 2026 07:00:00 GMT",
-      "sentiment_score": 1.0,
-      "sentiment_label": "POSITIF",
+      "title": "Meski IHSG Merah di Sesi I, Tapi 10 Saham Ini Diborong Asing",
+      "source": "CNBC Indonesia",
+      "link": "https://news.google.com/rss/articles/CBMivgFBVV95cUxOc0lteldURkdpNDNISlVLS05Jd2pKT045ZDF2enBfR21CbGRXdXJGVEFBSFcxdXRHMmdTWGN2ZXc3NV9MMkJMdXpocWQydXNSc0V0Wjk0UUJtRXlvYlh0S3VxZ3NaN2lmMXRWQ1FFZTg1RDNOTGZpREY3UG1JdFQ2Q0dxUm4xZjFKMHRoZnd1dnNZdHBLcDNGaURFOU5wYVpCMFVZNjhocEFFcmdTNGlTaWVZa2Y3ZHNZclBsSnRn0gHDAUFVX3lxTE05bWxWcHVqWG9KNklzYTYtTWZLZnh4aXRJdm1xMGhyZERWcl9mbzdaSDR3RF91cHNDR1Z5U1lGZEZBdUg5bVNVdDk4U0xnalAtdk9qSC1felNRS1RNdkJoMDUyeTNmZlRYNFhBX3ZNb3V2OF9hV0F2THg0R2tTWVg3SmxyZnVOdGtUSHhheVphcW14X2FDMjlpQVVuWC03YW1Bc2t4S2hvMWl2VEJ3NjNXMGxKckV0M0F0NzN3MGxZQ0FSYw?oc=5",
+      "pub_date": "Wed, 25 Nov 2026 06:05:34 GMT",
+      "sentiment_score": -0.5,
+      "sentiment_label": "NEGATIF",
       "keywords": [
-        "laba",
-        "buy"
+        "merah"
+      ]
+    },
+    {
+      "title": "Proyeksi BBNI \u2014 Target Harga untuk 2027",
+      "source": "TradingView",
+      "link": "https://news.google.com/rss/articles/CBMidEFVX3lxTFBHWkFFc2J4YS1DUThwZHRWRW4zeW5ncmxZcUIyU3VaMjJYTE5ZenBKVzFtYW5KQWlURzJxMzVWZ3hKeVd6b2xGSjV4LXNPMFYzaTBBSTdHbmhsSUoxNEt4ZEVGSmwzNFZyRjU5bDN3d0JLY1Nu?oc=5",
+      "pub_date": "Thu, 25 Jun 2026 12:56:50 GMT",
+      "sentiment_score": 0.0,
+      "sentiment_label": "NETRAL",
+      "keywords": []
+    },
+    {
+      "title": "IHSG Turun ke 5.197, Mayoritas Saham Tumbang, 3 Big Bank Ini Menghijau",
+      "source": "Emitennews.com",
+      "link": "https://news.google.com/rss/articles/CBMioAFBVV95cUxPR3FneGFQQmhFTGpFUllFTkdCZjJiXzZTcWUxSXlSdEQwWXRnNTd6OWpNSmRlZVRDUlNwMUNWVTFBT0xickpINkNRTHU5alRjbnNsV1VoQXloOTBwczRSbmNEOERnVzlzbUVNUXdQRUZFNjZpR21oMWM3M0hXdnhCNF9wN3NXVC10aTVXRzlxZGFBN0RUUkdOLUR1cGRZVVlf?oc=5",
+      "pub_date": "Mon, 23 Nov 2026 15:02:00 GMT",
+      "sentiment_score": -0.5,
+      "sentiment_label": "NEGATIF",
+      "keywords": [
+        "turun"
       ]
     }
   ]

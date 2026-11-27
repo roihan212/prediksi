@@ -1,25 +1,45 @@
 {
   "ticker": "BMRI",
   "overall_sentiment": "BULLISH / POSITIF",
-  "sentiment_score": 0.33,
+  "sentiment_score": 0.17,
   "status_color": "green",
   "distribution": {
-    "positif": 3,
-    "negatif": 0,
+    "positif": 2,
+    "negatif": 1,
     "netral": 3,
     "total_news": 6
   },
   "articles": [
     {
-      "title": "Dividen BMRI 2026: Jadwal & Besaran",
+      "title": "Bedah Saham BMRI 2026: Kinerja Bank Mandiri, Dividen dan Target Harga",
       "source": "Ajaib",
       "link": "https://news.google.com/rss/articles/CBMihAFBVV95cUxQQTZ3THdFdXF3ZWd6cHU2SE1tR0V5WEIxTWN1UmNMZFlkRW9lYjJGcFRQdDBoQnVUVDJsOTFHOE4xVzUwZVFsNWpGdXI2eER3MzVZOFZ2QlhCcm9OVldzc1A4cDhtaUdndy03MklnNjZPdlZTTGJqNEZieEtaa3FvR180UkE?oc=5",
-      "pub_date": "Tue, 24 Nov 2026 09:41:12 GMT",
+      "pub_date": "Tue, 24 Nov 2026 09:41:43 GMT",
       "sentiment_score": 0.5,
       "sentiment_label": "POSITIF",
       "keywords": [
         "dividen"
       ]
+    },
+    {
+      "title": "Analis Jagokan Saham BMRI di Tengah Tantangan Likuiditas Bank Pelat Merah pada 2027",
+      "source": "KONTAN",
+      "link": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxPMWdqcFg5SF9zVEhUeXBnbDlMWnlXdnJGdFFEZ0NRdlRla2M2RThJVXJUWG1HSGpBOGdvdUhKQnBxaU5rRXY5ZGtSdmJKLVZORWhjOFJJOGZWZE5Pa3AyZ3NtQ0Qwa0hLVWVyTTJUMDM5WDlEWFZDZ0F6eXp5NDVlemhSSENiaFNzRjEwMXpDMmlwVmVVTWdzM1hTSUNpaUJfTTB1dnVtSzVzYlFFOGFGT3BDM3BXTzVi?oc=5",
+      "pub_date": "Fri, 27 Nov 2026 06:15:24 GMT",
+      "sentiment_score": -0.5,
+      "sentiment_label": "NEGATIF",
+      "keywords": [
+        "merah"
+      ]
+    },
+    {
+      "title": "Bank Mandiri Buka Suara soal Gadai Saham Perusahaan Haji Isam",
+      "source": "beritanasionalupdate.com",
+      "link": "https://news.google.com/rss/articles/CBMisgFBVV95cUxPaDR1QVRLRFVLYlBUWTVmSVRwY2x6VkQ3T215N1UycE9rUHRlWTlneGE1amoydmFUUWpzeFhyYTBpbEZCdTkwYkp0dHhycllBNVFjUnFKNzdPcmVfV3FHZlJpTmY1QktXTExVSjhIUDM2Z3lYbktWcXlIWjV4VjI2YTZ5cUtsUHRRdk1xa0R0RDNHRWRvODJoMGR5bFUyV3h4TDJ4QWZZdjBpWkFZWkdGUFhn?oc=5",
+      "pub_date": "Mon, 19 Oct 2026 07:00:00 GMT",
+      "sentiment_score": 0.0,
+      "sentiment_label": "NETRAL",
+      "keywords": []
     },
     {
       "title": "Laba Bank Mandiri Tumbuh 19,6%, Maybank Sekuritas Rekomendasikan Buy Saham BMRI",
@@ -35,30 +55,10 @@
       ]
     },
     {
-      "title": "Bank Mandiri Buka Suara soal Gadai Saham Perusahaan Haji Isam",
-      "source": "beritanasionalupdate.com",
-      "link": "https://news.google.com/rss/articles/CBMisgFBVV95cUxPaDR1QVRLRFVLYlBUWTVmSVRwY2x6VkQ3T215N1UycE9rUHRlWTlneGE1amoydmFUUWpzeFhyYTBpbEZCdTkwYkp0dHhycllBNVFjUnFKNzdPcmVfV3FHZlJpTmY1QktXTExVSjhIUDM2Z3lYbktWcXlIWjV4VjI2YTZ5cUtsUHRRdk1xa0R0RDNHRWRvODJoMGR5bFUyV3h4TDJ4QWZZdjBpWkFZWkdGUFhn?oc=5",
-      "pub_date": "Mon, 19 Oct 2026 07:00:00 GMT",
-      "sentiment_score": 0.0,
-      "sentiment_label": "NETRAL",
-      "keywords": []
-    },
-    {
-      "title": "IHSG Cenderung Menguat, Serok Saham BMRI, TLKM, INDF, dan UNVR",
-      "source": "Emitennews.com",
-      "link": "https://news.google.com/rss/articles/CBMijwFBVV95cUxNYW9lUDZHWDQwNFRfYnN3WDFYeWJRc0JFUlZUMmVUMEVqZnYzMG92Mk9DMzkzaXZGU284cGVOWVVsbFU3clZMWWN6aWlfalFwc2J0YmZXMkptMXBBalRkaFBmdXFzejRJSm40aS1aSWdqYmp1dVpRckliTkdLbE1yU2NQWTBDVzlpaXdFZ3NfOA?oc=5",
-      "pub_date": "Wed, 25 Nov 2026 01:23:00 GMT",
-      "sentiment_score": 0.5,
-      "sentiment_label": "POSITIF",
-      "keywords": [
-        "menguat"
-      ]
-    },
-    {
-      "title": "Abaikan bantahan MSCI, saham bank topang IHSG naik 0,49%",
-      "source": "IDNFinancials",
-      "link": "https://news.google.com/rss/articles/CBMinwFBVV95cUxPVDZad2xzSHM5UmdZSk9SdU4tcjA0VHpNSDFKTnBac0Y0YnFNdVpKM0xIc2otYWJOS1QyVUZXbV9YM254MXVEWTh5WXg1cktCRDVuN1hBSFFMTXhudnowSjN3bE1xVVNoTnhqOVg1N2c4T3Joa2hvYTRsc0VqSHl0QTJORVhwTXU4S0hXWUJPdE5STEp6ZXE3OU5TOXpmQ1k?oc=5",
-      "pub_date": "Tue, 24 Nov 2026 09:50:00 GMT",
+      "title": "Bank Mandiri (BMRI) Salurkan KUR ke 193.000 Debitur Baru hingga Oktober 2026",
+      "source": "InvestorTrust",
+      "link": "https://news.google.com/rss/articles/CBMitgFBVV95cUxNY3ZKVmFtd1Q3SmRLVWhWWFdNMmQ3cVRuclRCa3IycGtQanAtMFIzRDllbGFsU08xY2R1c0VPMXBNQjJGZDhCM2JOTmdybjZYbVpsT0t1dVIxYWk5Q25iSndFd2pHZ0dkVDh3Qk9jYkp0WFQ1eG1uVFE4OENtNXI1X0pjdUg2bXJHdlJ0ZVI5SG9iS2ZELUV0UlFFZDBybm4wRE13ME5RU2doTHo0VFBhekgyODlldw?oc=5",
+      "pub_date": "Fri, 27 Nov 2026 07:40:00 GMT",
       "sentiment_score": 0.0,
       "sentiment_label": "NETRAL",
       "keywords": []

@@ -1,79 +1,77 @@
 {
   "ticker": "BBRI",
-  "overall_sentiment": "BEARISH / NEGATIF",
-  "sentiment_score": -0.33,
-  "status_color": "red",
+  "overall_sentiment": "NETRAL / KONSOLIDASI",
+  "sentiment_score": -0.08,
+  "status_color": "yellow",
   "distribution": {
-    "positif": 1,
-    "negatif": 4,
-    "netral": 1,
+    "positif": 2,
+    "negatif": 2,
+    "netral": 2,
     "total_news": 6
   },
   "articles": [
     {
-      "title": "Asing Lepas BBRI Rp217,9 Miliar, Net Sell Terbesar Saat IHSG Turun 0,84%",
+      "title": "Rekomendasi Saham Tim Analis Bareksa: INDF, BBRI & EXCL",
+      "source": "Bareksa.com",
+      "link": "https://news.google.com/rss/articles/CBMioAFBVV95cUxNTjBCbDhiUk92MGxBMUpra1kwdV8wVWFYVXhmMDhQbVlDZmtzeHdqQ0l6ZDBiUHcyRU1CUUVlSlFiczEtZjU3aE1yeUM0VnVYNldDV3BUcTVBR2xxOEhNNGZqQ1RUTllXTjNzYW5BbXJiODVfTndPTUpRdjlZdi1xRTRnaE1WR1ZWUnJFdXVZSHRvWTl2OUJTNWFuSUNud2Rt?oc=5",
+      "pub_date": "Fri, 27 Nov 2026 04:19:57 GMT",
+      "sentiment_score": 0.0,
+      "sentiment_label": "NETRAL",
+      "keywords": []
+    },
+    {
+      "title": "Analis Jagokan Saham BMRI di Tengah Tantangan Likuiditas Bank Pelat Merah pada 2027",
+      "source": "KONTAN",
+      "link": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxPMWdqcFg5SF9zVEhUeXBnbDlMWnlXdnJGdFFEZ0NRdlRla2M2RThJVXJUWG1HSGpBOGdvdUhKQnBxaU5rRXY5ZGtSdmJKLVZORWhjOFJJOGZWZE5Pa3AyZ3NtQ0Qwa0hLVWVyTTJUMDM5WDlEWFZDZ0F6eXp5NDVlemhSSENiaFNzRjEwMXpDMmlwVmVVTWdzM1hTSUNpaUJfTTB1dnVtSzVzYlFFOGFGT3BDM3BXTzVi?oc=5",
+      "pub_date": "Fri, 27 Nov 2026 06:15:24 GMT",
+      "sentiment_score": -0.5,
+      "sentiment_label": "NEGATIF",
+      "keywords": [
+        "merah"
+      ]
+    },
+    {
+      "title": "Asing Lepas Saham BBRI Rp187,69 Miliar, Harga Turun Tipis ke Rp3.070",
       "source": "Ajaib",
-      "link": "https://news.google.com/rss/articles/CBMivwFBVV95cUxPdVI5NFA5ZVJ5Y0xnN0l2VnJRZmUzY3BFMmxFVWQwMWdZZTNwWG1DNnN1all5TXd1eV9DdEZjU1o1Z1hObUtnZzB2VXplMXhDekJnTXgxMl9kVjlmWnpENVFpeXF1VENRM2QzZFdPLVJTUFQ0WU5IMjR3M1Brdll1d1N6THlQeHNwWUF4eDBFMHgtdkZYLVdtamxQWW1XNUdXa2NmQkdXLXhPZEU2MkFZZXJBc05qcExiNzZmMDNvNA?oc=5",
-      "pub_date": "Thu, 26 Nov 2026 08:09:43 GMT",
+      "link": "https://news.google.com/rss/articles/CBMiogFBVV95cUxOMFlUeUVuZTNVOTJMdmVkaDNmSnpkckJJZ2F6RFA5LUJVWUVJSmRfYjY1Q1BYXzhtR1VBUzFaVmxFZmFWdmdwYVVJaWpoTlBZNzN1aFcyQ3RrSS16TW9DdmJvUlF0aEtYQmFNTk93WmxqcGZQcnV1UV9CSG5rS3F5eG9lNk1rMWdjLS0xdHBNbU1BbGk2aGZtckRVNERZRWN6Y1E?oc=5",
+      "pub_date": "Tue, 24 Nov 2026 04:50:21 GMT",
       "sentiment_score": -1.0,
       "sentiment_label": "NEGATIF",
       "keywords": [
-        "sell",
+        "lepas saham",
         "turun"
       ]
     },
     {
-      "title": "Direktur Borong 1,1 Juta Saham BBRI di Harga Rp2.700",
-      "source": "CNBC Indonesia",
-      "link": "https://news.google.com/rss/articles/CBMisgFBVV95cUxQZW93UTFSOEhLdmJLcE9fdi1IbHJrRnJlYjNXVnl1Z19mVDlESzU2MGlyWWItYkREOElONlEwYXpiNHVCX21WNjdiQWtNdm9nenJmQ1ZiSHFKOGxWVWNIenR3Rm5xV3FoZHY2cS1rMUZGNHpqRGNYd1pzZDVQTGdMbnl3R1hMQnVMYUFrU0ZkaXN6UVRWNEo3SUZLeVAwak1iWlh5N0MyZGtMeE9GeEppTlZ30gG3AUFVX3lxTE40bDhpVUc1M0c0VEQ2TExPWGtwRGdzWjl6WkdPejJWTUtBamItQlliUFhFdS15ZzhCcktMY0NOM0pubVFMR3ZlVHJ2YnhaOC1uZGNFSzdYYWFPS2pybmtHa2VxUTctWHZqSXM1TG5ZQzg2c05QNnZDUy1hMW5GYW5zOTQycW5jbzBwRVdQc1hBWUdNUndURmZBdTNaUEhtRDhwN2FMM0dwWFV3X2o0VWk3dGZ5ZzJjMA?oc=5",
-      "pub_date": "Mon, 19 Oct 2026 07:00:00 GMT",
+      "title": "BRI Siapkan Strategi Dongkrak ROE Kupedes Jadi Andalan Pemulihan",
+      "source": "Tribun Bone Online",
+      "link": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxOalAxbW9nSzFrRlJZX2N1TjdxUjZaSVFUY3pvczh2Q28tTnVLSE1RSDRjSi04VjZFNGVwNHBEVmpzV0loSDY5Q3dyNlRGLUozM2VQRWdxWU53RXp1QmM2UGV3em9GbFlqeURRcGZ4V2R5MHpmd0cwS29sdjRkeUFmUmF2SVBrTXZMeHdRZ0Mtc1REVlE5VGdjWmRvYzVxMlE3RFE2cUNUVEE?oc=5",
+      "pub_date": "Fri, 27 Nov 2026 09:38:04 GMT",
+      "sentiment_score": 0.5,
+      "sentiment_label": "POSITIF",
+      "keywords": [
+        "pemulihan"
+      ]
+    },
+    {
+      "title": "Prabowo: Sudah Kaya Masih Main Goreng Saham, Jutaan Rakyat Jadi Korban",
+      "source": "Kompas.com",
+      "link": "https://news.google.com/rss/articles/CBMivgFBVV95cUxOekNYblpwYkdsejF6T0Rtb0l6Q2hDMGtDSkVpRHFwUElNUjJjQk9RRFFDbHJWMzZZS3JfQUNQYl9vbHhMVXlYZmhnSnBsdkswd1YxcjREZ2E2TkR4QzBVZU01dV9aSUo1TDZvR2VPeXkyZ09DNkUwTW1MYjF5UDBneEliMDlvQ1lENVFxU1pjQnVlT0JacWo1aGRxdVVJM25lblFPV1NLcy1pUU1YYXVlRGVWQThwZW1PbWh5TFJ3?oc=5",
+      "pub_date": "Fri, 27 Nov 2026 14:33:00 GMT",
+      "sentiment_score": 0.0,
+      "sentiment_label": "NETRAL",
+      "keywords": []
+    },
+    {
+      "title": "Investor Asing Borong Saham BRMS Senilai Rp90,62 Miliar",
+      "source": "cwibc.co.id",
+      "link": "https://news.google.com/rss/articles/CBMiYkFVX3lxTFBQVmJDdWxfWGJKUVo3bmk3MnVhMkw3WGRDY1NTNlJUU1pEVlk3X1ZCb0YwN3Y0b2FnalgxN2tfN0ZLSE5hMWRDMS1lZFFneDA2Ni1OWi03TVhLVTdEbmJEVEpn?oc=5",
+      "pub_date": "Fri, 27 Nov 2026 07:59:58 GMT",
       "sentiment_score": 0.5,
       "sentiment_label": "POSITIF",
       "keywords": [
         "borong"
       ]
-    },
-    {
-      "title": "IHSG Diproyeksikan Melemah, Sentimen Negatif Global Tekan Pasar Saham Indonesia",
-      "source": "TopBusiness.id",
-      "link": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxOdC0xWGJ1V00xX3lPMzVmNmo2YlRJLW1SSUJrNjVKZjlaRmJ0MHFGVDExSl9obmNVUkF3OHFyY1AwMXRJc19JSEtOMXpXLVNWU3FrazVLbERVQlU1bmlac1pYODBJeUFKRnk1ZjlJaHRlU0N5VDZjbExlbGZtd2pqN21qVlJoSS1EWEtGQlpPb1YxLWFJUG5FdE1VRVpBSVJYXzBjalpCdWw1aHNEcmwtM0tDQVBNT2pJ?oc=5",
-      "pub_date": "Thu, 26 Nov 2026 01:17:00 GMT",
-      "sentiment_score": -0.5,
-      "sentiment_label": "NEGATIF",
-      "keywords": [
-        "melemah"
-      ]
-    },
-    {
-      "title": "Asing belanja saham-saham ini saat IHSG turun 0,49% di sesi I",
-      "source": "IDNFinancials",
-      "link": "https://news.google.com/rss/articles/CBMipwFBVV95cUxOUTBOZmlOMWRqMFhKYUFWc0pEOHFpREd1Y2VhZEIyY2NzLThSbVRKU3ExMHQwYmhZSUFrVEN2YkZsY3ROZmlROWFTVDRzaXJZUUZuM01pMHlFZ3NsbWhwQVhVQVZ3NXplOVk3X1UxbG00Q25vellyMFAzNVhLVzBWUjJrSkpyaUh3NVBZWGFmeV9kNG5uYmQ5RE5LVGZVQmxsRVNtM0R6OA?oc=5",
-      "pub_date": "Wed, 25 Nov 2026 05:30:27 GMT",
-      "sentiment_score": -0.5,
-      "sentiment_label": "NEGATIF",
-      "keywords": [
-        "turun"
-      ]
-    },
-    {
-      "title": "Posisi Investor Asing Kala IHSG Turun",
-      "source": "Bloomberg Technoz",
-      "link": "https://news.google.com/rss/articles/CBMikwFBVV95cUxPWWpMVjE0azJmM0h3clFuTkdBNURWYzhCV0k5LTNmSjJmbjdlNm1teFA1YjJLLVJEMGw0Z244aWdDNDVldHVlNFE4cXZVTUxzTC1sYmwzVmI4MVNuRUQxUW43NDhQY2M4cXZoWXhWQTd3ZEM0Rnp6SUQza2U0YUJfTVlHY1VZTUtGbG1WeXppWXBNd1k?oc=5",
-      "pub_date": "Thu, 26 Nov 2026 00:00:00 GMT",
-      "sentiment_score": -0.5,
-      "sentiment_label": "NEGATIF",
-      "keywords": [
-        "turun"
-      ]
-    },
-    {
-      "title": "Simak Rekomendasi Teknikal Saham BBRI, INDF, dan PWON untuk Perdagangan Rabu (25/11)",
-      "source": "kontan.co.id",
-      "link": "https://news.google.com/rss/articles/CBMitgFBVV95cUxNbUMtamdTTUY4OVBuanNCcVd4c0xQVExfRzhnQ1I3OWpxSHltV0ZuM1RxeEh0Z2VKQkNxRmo3OWpyQmszM00wbnpLemhOUm0tTFBpMHk0S3pzUXIxQUJaNjRuMHZ3UHJwLUttanE3eWtHdG52bEZNNVVHbWY2R29MbUdTNVlSWDVJMm5SdkRieldpWFJYUXFKY3AyN2dWT3dKV3gwQldYZGp3VFdkQU1Kbm9fWnR0Z9IBrgFBVV95cUxOSUIzR3V6NTJEcEY4aFdwV1hVekwybnNUbmRVRDBPUDlsWXFyMXh3OVRFTFROSnByRERSS1JZSFoxNWRXdHNvQm4tS09mSkJnVFBGRjFWUFliZmZoX1FRMXUtbW1HV1EzdndVczRZLTlVRkZ4cXlyMGVkcmh4QzFGeG83WGk0WjJKVENvWlM1Y0dWalFxX1lJMFBKbEttQzh2ZGRZNDlKbFFtRGVrR2c?oc=5",
-      "pub_date": "Tue, 24 Nov 2026 10:30:25 GMT",
-      "sentiment_score": 0.0,
-      "sentiment_label": "NETRAL",
-      "keywords": []
     }
   ]
 }

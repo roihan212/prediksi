@@ -1,15 +1,27 @@
 {
   "ticker": "BBCA",
   "overall_sentiment": "BULLISH / POSITIF",
-  "sentiment_score": 0.17,
+  "sentiment_score": 0.42,
   "status_color": "green",
   "distribution": {
-    "positif": 2,
+    "positif": 4,
     "negatif": 0,
-    "netral": 4,
+    "netral": 2,
     "total_news": 6
   },
   "articles": [
+    {
+      "title": "Asing Borong Saham BBCA Rp1,19 Triliun, Cum Date Dividen Hari Ini",
+      "source": "Ajaib",
+      "link": "https://news.google.com/rss/articles/CBMingFBVV95cUxQTV9WYTNqUnROakhpd2dVVGJ6bzA0THk2eHVXYkhqQjlodjkySEFFMDVYckFkanlONHVHN3JuTExXZDFnYWF2UklVY0VUZWRwVW5PbzdJOUdWX25NM2wtU0hjTF82OW1fRDJvcU9STDdyR1pRMkZ6WWZsdmtjNWd2UU5SMlFYZ0NsVHdWSERpTXlZeWRjNXZ5bFc3VWw5dw?oc=5",
+      "pub_date": "Fri, 27 Nov 2026 04:23:47 GMT",
+      "sentiment_score": 1.0,
+      "sentiment_label": "POSITIF",
+      "keywords": [
+        "borong",
+        "dividen"
+      ]
+    },
     {
       "title": "BCA Umumkan Pembagian Dividen Interim dengan Akumulasi Tahun 2026 Rp80 per Saham, Naik 45,5% YoY",
       "source": "BCA.co.id",
@@ -22,26 +34,6 @@
       ]
     },
     {
-      "title": "IHSG naik 0,68% di sesi I, asing akumulasi saham-saham ini",
-      "source": "IDNFinancials",
-      "link": "https://news.google.com/rss/articles/CBMiogFBVV95cUxQVWVrNnhqVXctUVM4VDhvQnB2UXlEaEFGRnNMYTNDWHBMcTZZMFJtcWdfMkUtYnZPaGh5VjlCdmtTWFplRFp1OHhrbHpNQXd4RDZoTUhPYVYwRHBULVhVOXlQWFJQNjRaVFQ1dE9ZMDJNcnJNblRzWVZJVDVhQnlsQ0RxTTlWSVBFaDRVMnpPcG1iZ2RGNkhuWFUtMnhqLUlPVlE?oc=5",
-      "pub_date": "Thu, 26 Nov 2026 06:00:00 GMT",
-      "sentiment_score": 0.0,
-      "sentiment_label": "NETRAL",
-      "keywords": []
-    },
-    {
-      "title": "Asing Borong Saham BBCA Rp409,23 Miliar, Harga Naik 2,20% ke Rp5.800",
-      "source": "Ajaib",
-      "link": "https://news.google.com/rss/articles/CBMinwFBVV95cUxQTm10UTdxZzBiQjkxOEJsb1hmZkJjc3AwTm9HTWVuMXpVZXVweThUQ2JfRzl6Z1hlaFFUd0RUeXBzZ2l5ajd3SVpSWk42ZlA3OWM3S1NMbEM0U0xQcGNQbXEyNzVCQ0pzTVFUTzV0dUo1YWhKYW14OFB3c0hVOWJTU0ZSQU0teHpsaVhTQmVZS2dmRk1OYUVIcllZMHhpVXM?oc=5",
-      "pub_date": "Wed, 25 Nov 2026 05:05:06 GMT",
-      "sentiment_score": 0.5,
-      "sentiment_label": "POSITIF",
-      "keywords": [
-        "borong"
-      ]
-    },
-    {
       "title": "Asing Serok Saham BBCA Saat Tiga Saham Bank BUMN Dilepas, Simak Rekomendasi Analis",
       "source": "TradingView",
       "link": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE5zZEx1MHJYSWFGTHdQOXVzVkFEYWY4Tk05R3B2elNlR2ptRVpzTF9fTmpLTHQ1NENwalpFVlZDYk1rdGNTNVFDVmZ6a3JjdGVBOGNNb3RJNEJXRGhoVXhINkFEbjcxdw?oc=5",
@@ -51,22 +43,35 @@
       "keywords": []
     },
     {
+      "title": "Investor Asing Diam-diam Borong Saham BBCA hingga ANTM",
+      "source": "Bloomberg Technoz",
+      "link": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxOYS13akFYT0FsZTV6RlV3Z3JfR2hyeUhPQmRISEpFc2RXd0Y0Z0tjTmpxcV81UG4yUy0yT3pWQkdITUZSODQzOHN0YlBYMm85N2JLa1ZwQXdsXzAzazhDSC1wbHZ6TUdSb2pUSnltQ3JsdFEwR0REYkhEeEtuU3Vrb0tQak9rVlhMVjNrUkpwdmo1V3R2YXRSUS1RMmxGdTNyOXVueldQVkFvdw?oc=5",
+      "pub_date": "Thu, 26 Nov 2026 22:08:00 GMT",
+      "sentiment_score": 0.5,
+      "sentiment_label": "POSITIF",
+      "keywords": [
+        "borong"
+      ]
+    },
+    {
       "title": "Rekomendasi Saham Tim Analis Bareksa: BBCA, BRIS & SMRA",
       "source": "Bareksa.com",
-      "link": "https://news.google.com/rss/articles/CBMipgFBVV95cUxNTHh2ZWpBTThsMVFXWHJQVHN0Tjk4RzZxOXUybzNseGwweHhTektCRVpNcXlMaERDTGVNNkdaQ2NrRXRucUpsZ0EtYU4wN09RVkNJYWxiWmNGZHY5dk5DN0xEblQzWDVYd09iYm1jYVlISUtQdlJMTUFWb0Uxa09MZ1NxRVJ1dUV2NHZBbTFScWhFWXIxSTZwSGhzT3NPeGdsbXFYWUxB?oc=5",
-      "pub_date": "Tue, 24 Nov 2026 03:07:30 GMT",
+      "link": "https://news.google.com/rss/articles/CBMioAFBVV95cUxPTGxNSGtLY21lRGlkQ19uX29ncG45MFEwTExJSWRXQXVNNW43dlp4SmRfZnZKS3cwMnl4LUpFcENLd0FKeGN3dmdOZ2ZqYUxtaU5qMFh3aE1ZdzhIXzBvbllXTV9pRzJXT3J1eE1yUlpIeHZVSVBaeERmU0lhMk9jLVR4YnZKd1c0aHZtWGFnSHFfRDJGemZYOEp2MnZNMmRl?oc=5",
+      "pub_date": "Tue, 24 Nov 2026 03:18:42 GMT",
       "sentiment_score": 0.0,
       "sentiment_label": "NETRAL",
       "keywords": []
     },
     {
-      "title": "UOB Kay Hian Pangkas Target Harga Saham BBCA",
-      "source": "cwibc.co.id",
-      "link": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE1LbVNQUEFSRGxNX2lJSFZ1cjRyRjA5QnA2WTlzVV9CX0NUOWVEUU9tVEwyR3dDeXdXNzhSYUVGYmFITlVfQmwzRXd0aVhycXlzQUx5b2F6dDVjUnIwWFFZ?oc=5",
-      "pub_date": "Thu, 26 Nov 2026 03:38:09 GMT",
-      "sentiment_score": 0.0,
-      "sentiment_label": "NETRAL",
-      "keywords": []
+      "title": "Investor Asing Borong Saham BBCA Rp1,4 Triliun dalam Lima Hari",
+      "source": "Demokratis.co.id",
+      "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTFBXelE4R04tWHplZ1JBeFpwcWswUHltMFdKOUNYcmJOWHNxN1kyZVVfZWpBSzk1bG9BbnhGTDQ4R2JNUHdjNzBnWVQxRHFLemY4Mm9YeTEydjUzSEpoWGF0QThJMTRpbzZnUFE?oc=5",
+      "pub_date": "Fri, 27 Nov 2026 13:45:34 GMT",
+      "sentiment_score": 0.5,
+      "sentiment_label": "POSITIF",
+      "keywords": [
+        "borong"
+      ]
     }
   ]
 }

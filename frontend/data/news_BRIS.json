@@ -4,20 +4,22 @@
   "sentiment_score": 0.17,
   "status_color": "green",
   "distribution": {
-    "positif": 1,
-    "negatif": 0,
-    "netral": 5,
+    "positif": 2,
+    "negatif": 1,
+    "netral": 3,
     "total_news": 6
   },
   "articles": [
     {
-      "title": "Rights Issue, BSI (BRIS) Mau Terbitkan 6,8 Miliar Saham",
-      "source": "CNBC Indonesia",
-      "link": "https://news.google.com/rss/articles/CBMitgFBVV95cUxOeVlXcTRLLUJDSUNTejliRHVUM0dpZkVPZl82OWtGWGxfLVQ4MUo5dXdUdnFscjBkX2RNU2NpUWVGREZCQVZhTW5vMVc3ZG5SRnlsWFFGcXRUQXd6bEFDbVRWdjg2M2hRTURRNHNOU2plZnQ2Z0p6LUZvY3pKcUNYbWtXMVBuYUJsdDVvaFppczFRUW13UnhZR1VHQUZWdkwzNlI4aEdoV005MWxXVVpHM05RY1VCd9IBuwFBVV95cUxPV1d5T2VuM1VOMExYc1QwMWJMTm44RUJuU0VESlBmb2NNbEtVbkpvV0daNVg5eXVDZ1duaFVZWVl3eFVYRnlSVEJDSHFTeFdsYkU3YVVYNXR1WVpVUkREMHN3azlvUS1QbEVTaTE5dUhRMUttTWkwek5xX0tqQzFKWUtMa3lfUzluWVpmR3hackhWRlZSSlVJOU1rSHZfOTdvUlNjekVTT3V4b0lCV2FNVXlsalVfY2tOOGtJ?oc=5",
-      "pub_date": "Thu, 26 Nov 2026 03:05:37 GMT",
-      "sentiment_score": 0.0,
-      "sentiment_label": "NETRAL",
-      "keywords": []
+      "title": "Analis Jagokan Saham BMRI di Tengah Tantangan Likuiditas Bank Pelat Merah pada 2027",
+      "source": "KONTAN",
+      "link": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxPMWdqcFg5SF9zVEhUeXBnbDlMWnlXdnJGdFFEZ0NRdlRla2M2RThJVXJUWG1HSGpBOGdvdUhKQnBxaU5rRXY5ZGtSdmJKLVZORWhjOFJJOGZWZE5Pa3AyZ3NtQ0Qwa0hLVWVyTTJUMDM5WDlEWFZDZ0F6eXp5NDVlemhSSENiaFNzRjEwMXpDMmlwVmVVTWdzM1hTSUNpaUJfTTB1dnVtSzVzYlFFOGFGT3BDM3BXTzVi?oc=5",
+      "pub_date": "Fri, 27 Nov 2026 06:15:24 GMT",
+      "sentiment_score": -0.5,
+      "sentiment_label": "NEGATIF",
+      "keywords": [
+        "merah"
+      ]
     },
     {
       "title": "Laba BRIS Naik 10%, Rekomendasi Buy Target Harga Rp2.450",
@@ -32,15 +34,6 @@
       ]
     },
     {
-      "title": "BSI (BRIS) Rights Issue Maksimal 6,8 Miliar Saham, Siap Perkuat Modal",
-      "source": "TradingView",
-      "link": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE5pNVRoajcxSFN5WjBlWDFQVDI2RUotNWtRajBMZlR3dFVqWTdhdXBsYjhONVpfMF9qbUk2amlPcGJjaWpIa3F5OGhTdWV2WDhMRnhoQmNkMkZqbnkzRXpobkVFWGhFUQ?oc=5",
-      "pub_date": "Thu, 26 Nov 2026 05:03:00 GMT",
-      "sentiment_score": 0.0,
-      "sentiment_label": "NETRAL",
-      "keywords": []
-    },
-    {
       "title": "Rights Issue BRIS: Kapan, Berapa Harganya & Apakah Saham Terdilusi?",
       "source": "Ajaib",
       "link": "https://news.google.com/rss/articles/CBMinAFBVV95cUxObm9QNzI3ejlxaHVkUFZZX0JKWnNiQlZ1QXNGM2FseVJIcGxrY29XZzFmTTVmVXA2c2hfcnVPUGpoVWlHZWlhM21RTUZNQVhZdnFDZjBMbFpuQkdQem5CcVo1S3JCc29sRjVkRThhVzAxQml1eExraXRiQmRMdUI0R2VRNmZrWEJYaER0dXRjQ2N2aWFNWFJJeG44UUw?oc=5",
@@ -50,22 +43,33 @@
       "keywords": []
     },
     {
-      "title": "Cermati Rekomendasi Teknikal Saham BRIS, INDY, dan PANI, Kamis (26/11)",
-      "source": "kontan.co.id",
-      "link": "https://news.google.com/rss/articles/CBMiogFBVV95cUxPQVk5UmFWODA3UHRyckhXS0hRTWNOQ0Jvc0NLX1J2VnNlSTFWaVBHem1xZG1NOEZoN2hwdWdXX0FiVW13TUpyLVlPWjBLUmtLa2pDNGNwVGc1dVNmN2hUeks5VUJNMzdPRTF0RVg3TTFONjhTakEtZXgxczNFVmFSdUhKUE80Vk1fRW5seTdSQ2t5SzN2RDJwQnBNdkUzZ1RYV3fSAZoBQVVfeXFMTnN2Z2s1ZHB1UUhBLXdmMVR6ME1hVUNFZERqZ29rSnktdUg0ekpLZmdoSlpEV3JxR0FDWFBCdklnbWRzVVpGT3p3QzBicVRxX1FIY1oyck9yX05MZmFyTXNNMGY0TnhPdnZ3UmJ4ckd0TGJBMF85UENXV24yV2ZvS2lQRy03dFRwamtHVm12ajI4WGRZM0F6c3lDdw?oc=5",
-      "pub_date": "Wed, 25 Nov 2026 23:00:20 GMT",
+      "title": "Rights Issue, BSI (BRIS) Mau Terbitkan 6,8 Miliar Saham",
+      "source": "CNBC Indonesia",
+      "link": "https://news.google.com/rss/articles/CBMitgFBVV95cUxOeVlXcTRLLUJDSUNTejliRHVUM0dpZkVPZl82OWtGWGxfLVQ4MUo5dXdUdnFscjBkX2RNU2NpUWVGREZCQVZhTW5vMVc3ZG5SRnlsWFFGcXRUQXd6bEFDbVRWdjg2M2hRTURRNHNOU2plZnQ2Z0p6LUZvY3pKcUNYbWtXMVBuYUJsdDVvaFppczFRUW13UnhZR1VHQUZWdkwzNlI4aEdoV005MWxXVVpHM05RY1VCd9IBuwFBVV95cUxPV1d5T2VuM1VOMExYc1QwMWJMTm44RUJuU0VESlBmb2NNbEtVbkpvV0daNVg5eXVDZ1duaFVZWVl3eFVYRnlSVEJDSHFTeFdsYkU3YVVYNXR1WVpVUkREMHN3azlvUS1QbEVTaTE5dUhRMUttTWkwek5xX0tqQzFKWUtMa3lfUzluWVpmR3hackhWRlZSSlVJOU1rSHZfOTdvUlNjekVTT3V4b0lCV2FNVXlsalVfY2tOOGtJ?oc=5",
+      "pub_date": "Thu, 26 Nov 2026 03:05:37 GMT",
       "sentiment_score": 0.0,
       "sentiment_label": "NETRAL",
       "keywords": []
     },
     {
-      "title": "BSI Terbitkan 6,8 Miliar Saham untuk Perkuat Modal",
-      "source": "cwibc.co.id",
-      "link": "https://news.google.com/rss/articles/CBMieEFVX3lxTE1NY3FJaE5fZjJXNmVsX2xvOGV2S3Q1R21pZjZWQ0g0c2taclRvSFlaUE1iajJsVFotVVdIQjVMZHBNa3VnT3hqUGROU2xBMHRFRzVBV3paY1E2SElwVEx2eDA1ZVdvSS1qbHNBdmlnQ19taGpMYlBLZw?oc=5",
-      "pub_date": "Tue, 24 Nov 2026 12:55:58 GMT",
+      "title": "BSI (BRIS) Rights Issue Maksimal 6,8 Miliar Saham, Siap Perkuat Modal",
+      "source": "TradingView",
+      "link": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE5pNVRoajcxSFN5WjBlWDFQVDI2RUotNWtRajBMZlR3dFVqWTdhdXBsYjhONVpfMF9qbUk2amlPcGJjaWpIa3F5OGhTdWV2WDhMRnhoQmNkMkZqbnkzRXpobkVFWGhFUQ?oc=5",
+      "pub_date": "Thu, 26 Nov 2026 05:03:00 GMT",
       "sentiment_score": 0.0,
       "sentiment_label": "NETRAL",
       "keywords": []
+    },
+    {
+      "title": "Terusir dari FTSE, Laba BRIS Tembus Rp6,12 Triliun Kuartal III",
+      "source": "Emitennews.com",
+      "link": "https://news.google.com/rss/articles/CBMikgFBVV95cUxOai1EUC1Bb0NVMGFlaXZra285M3F3Q1lna2pqbEllRWNUR29oSlVFYlhTZWhOOU8zYUhNRWtISXlDN2VnTVNTdmFBX3dBOHBGWVR6TXNkaTBuVVc0YVZwN1BzQzFBcFUxR2pSdzA2ZzNsbk5jelgwY0xmeTNlaWpMbC1xNTVUbmxwbG42R0VJQjhpZw?oc=5",
+      "pub_date": "Tue, 24 Nov 2026 03:29:00 GMT",
+      "sentiment_score": 0.5,
+      "sentiment_label": "POSITIF",
+      "keywords": [
+        "laba"
+      ]
     }
   ]
 }
